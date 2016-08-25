@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D94178CC1D6E6A7600FF79CC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178CB1D6E6A7600FF79CC /* Item.swift */; };
+		D94178CD1D6E6A7600FF79CC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178CB1D6E6A7600FF79CC /* Item.swift */; };
+		D94178D01D6E6E1800FF79CC /* ProductGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178CF1D6E6E1800FF79CC /* ProductGroup.swift */; };
+		D94178D11D6E6E1800FF79CC /* ProductGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178CF1D6E6E1800FF79CC /* ProductGroup.swift */; };
+		D94178D31D6E6E3A00FF79CC /* Aisle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178D21D6E6E3A00FF79CC /* Aisle.swift */; };
+		D94178D41D6E6E3A00FF79CC /* Aisle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178D21D6E6E3A00FF79CC /* Aisle.swift */; };
+		D94178D61D6E73D100FF79CC /* AisleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178D51D6E73D100FF79CC /* AisleList.swift */; };
+		D94178D71D6E73D100FF79CC /* AisleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178D51D6E73D100FF79CC /* AisleList.swift */; };
+		D94178D91D6E73F900FF79CC /* Patron.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178D81D6E73F900FF79CC /* Patron.swift */; };
+		D94178DA1D6E73F900FF79CC /* Patron.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178D81D6E73F900FF79CC /* Patron.swift */; };
+		D94178DC1D6E743F00FF79CC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178DB1D6E743F00FF79CC /* Store.swift */; };
+		D94178DD1D6E743F00FF79CC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178DB1D6E743F00FF79CC /* Store.swift */; };
 		D9AB11A01D6E18D5004A1875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AB119F1D6E18D5004A1875 /* AppDelegate.swift */; };
 		D9AB11A21D6E18D5004A1875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AB11A11D6E18D5004A1875 /* ViewController.swift */; };
 		D9AB11A51D6E18D5004A1875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AB11A31D6E18D5004A1875 /* Main.storyboard */; };
@@ -27,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D94178CB1D6E6A7600FF79CC /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D94178CF1D6E6E1800FF79CC /* ProductGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductGroup.swift; sourceTree = "<group>"; };
+		D94178D21D6E6E3A00FF79CC /* Aisle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aisle.swift; sourceTree = "<group>"; };
+		D94178D51D6E73D100FF79CC /* AisleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AisleList.swift; sourceTree = "<group>"; };
+		D94178D81D6E73F900FF79CC /* Patron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patron.swift; sourceTree = "<group>"; };
+		D94178DB1D6E743F00FF79CC /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		D9AB119C1D6E18D5004A1875 /* AisleAideDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AisleAideDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AB119F1D6E18D5004A1875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9AB11A11D6E18D5004A1875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +76,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D94178CE1D6E6DCD00FF79CC /* AisleAide System Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D94178CB1D6E6A7600FF79CC /* Item.swift */,
+				D94178D51D6E73D100FF79CC /* AisleList.swift */,
+				D94178D81D6E73F900FF79CC /* Patron.swift */,
+				D94178DB1D6E743F00FF79CC /* Store.swift */,
+				D94178D21D6E6E3A00FF79CC /* Aisle.swift */,
+				D94178CF1D6E6E1800FF79CC /* ProductGroup.swift */,
+			);
+			name = "AisleAide System Objects";
+			sourceTree = "<group>";
+		};
 		D9AB11931D6E18D5004A1875 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +112,7 @@
 			children = (
 				D9AB119F1D6E18D5004A1875 /* AppDelegate.swift */,
 				D9AB11A11D6E18D5004A1875 /* ViewController.swift */,
+				D94178CE1D6E6DCD00FF79CC /* AisleAide System Objects */,
 				D9AB11A31D6E18D5004A1875 /* Main.storyboard */,
 				D9AB11A91D6E18D5004A1875 /* Assets.xcassets */,
 				D9AB11AB1D6E18D5004A1875 /* LaunchScreen.storyboard */,
@@ -200,9 +232,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94178CC1D6E6A7600FF79CC /* Item.swift in Sources */,
 				D9AB11A21D6E18D5004A1875 /* ViewController.swift in Sources */,
 				D9AB11A01D6E18D5004A1875 /* AppDelegate.swift in Sources */,
+				D94178DC1D6E743F00FF79CC /* Store.swift in Sources */,
+				D94178D91D6E73F900FF79CC /* Patron.swift in Sources */,
 				D9AB11A81D6E18D5004A1875 /* AisleAideDemo.xcdatamodeld in Sources */,
+				D94178D61D6E73D100FF79CC /* AisleList.swift in Sources */,
+				D94178D31D6E6E3A00FF79CC /* Aisle.swift in Sources */,
+				D94178D01D6E6E1800FF79CC /* ProductGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +248,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94178DD1D6E743F00FF79CC /* Store.swift in Sources */,
+				D94178D41D6E6E3A00FF79CC /* Aisle.swift in Sources */,
+				D94178CD1D6E6A7600FF79CC /* Item.swift in Sources */,
+				D94178D11D6E6E1800FF79CC /* ProductGroup.swift in Sources */,
 				D9AB11B81D6E18D5004A1875 /* AisleAideDemoTests.swift in Sources */,
+				D94178D71D6E73D100FF79CC /* AisleList.swift in Sources */,
+				D94178DA1D6E73F900FF79CC /* Patron.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +436,7 @@
 				D9AB11BE1D6E18D5004A1875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9AB11BF1D6E18D5004A1875 /* Build configuration list for PBXNativeTarget "AisleAideDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +445,7 @@
 				D9AB11C11D6E18D5004A1875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
