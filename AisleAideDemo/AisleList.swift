@@ -45,6 +45,15 @@ class AisleList: NSObject {
             let randomNum = Int(arc4random_uniform(UInt32(aisle.productGroups.count)))
             let pGroup = aisle.productGroups[randomNum]
             
+            let randomNum2 = Int(arc4random_uniform(UInt32(pGroup.items.count)))
+            let suggestedItem = pGroup.items[randomNum2]
+            
+            if suggestedItem == item || self.isItemInArray(items, suggestedItem: suggestedItem) || self.isItemInArray(itemArray, suggestedItem: suggestedItem) {
+                k -= 1
+                continue
+            } else {
+                items.append(suggestedItem)
+            }
             
         }
         
@@ -52,7 +61,76 @@ class AisleList: NSObject {
     
     }
     
-    func oneAisleOver()->[Item]{
+    func oneAisleOver(aisle: Aisle, userItemArray: )->[Item]{
+        var items : [Item] = []
+        var singleSuggestedItems : [Item] = []
+        var doubleSuggestedItems : [Item] = []
+        
+        let homeAisle = aisle.aisleNumber! - 1
+        let leftAisle = homeAisle - 1
+        let rightAisle = homeAisle + 1
+        
+        var count = 1
+        
+        if homeAisle == 0 {
+            let aisleRight : Aisle = self.aisleArray[rightAisle]
+            items = aisleRight.getAllItems()
+            
+            while count < 4 {
+                let k = Int(arc4random_uniform(UInt32(items.count)))
+                let suggestedItem : Item = items[k]
+                
+                if self.isItemInArray(userItemArray, suggestedItem: suggestedItem) {
+                    continue
+                } else {
+                    singleSuggestedItems.append(suggestedItem)
+                    count += 1
+                }
+            }
+            return singleSuggestedItems
+            
+        } else if (homeAisle + 1) == self.aisleArray.count {
+            let aisleLeft : Aisle = self.aisleArray[leftAisle]
+            items = aisleLeft.getAllItems()
+            
+            while count < 4 {
+                let k = Int(arc4random_uniform(UInt32(items.count)))
+                let suggestedItem : Item = items[k]
+                
+                if self.isItemInArray(userItemArray, suggestedItem: suggestedItem) {
+                    continue
+                } else {
+                    singleSuggestedItems.append(suggestedItem)
+                    count += 1
+                }
+            }
+            return singleSuggestedItems
+            
+        } else {
+            let aisleLeft : Aisle = self.aisleArray[leftAisle]
+            items = aisleLeft.getAllItems()
+            
+            while count < 3 {
+                let k = Int(arc4random_uniform(UInt32(items.count)))
+                let suggestedItem : Item = items[k]
+                
+                if self.isItemInArray(userItemArray, suggestedItem: suggestedItem) {
+                    continue
+                } else {
+                    doubleSuggestedItems.append(suggestedItem)
+                    count += 1
+                }
+            }
+            
+            let aisleRight : Aisle = self.aisleArray[rightAisle]
+            items = aisleRight.getAllItems()
+
+            let k = Int(arc4random_uniform(UInt32(items.count)))
+            doubleSuggestedItems.append(items[k])
+            count += 1
+            
+            return doubleSuggestedItems
+        }
     
     }
     

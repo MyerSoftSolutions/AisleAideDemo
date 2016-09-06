@@ -9,5 +9,8 @@
 import UIKit
 
 class Store: NSObject {
+    var aisleList : AisleList = AisleList()
+    static let sharedStore = Store()
 
+    
 }
