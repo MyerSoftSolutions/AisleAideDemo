@@ -61,7 +61,7 @@ class AisleList: NSObject {
     
     }
     
-    func oneAisleOver(aisle: Aisle, userItemArray: )->[Item]{
+    func oneAisleOver(aisle: Aisle, userItemArray:[Item])->[Item]{
         var items : [Item] = []
         var singleSuggestedItems : [Item] = []
         var doubleSuggestedItems : [Item] = []
