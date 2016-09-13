@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CDCE3C850B26B5E119E03744687B38F635049B5F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CDCE3C850B26B5E119E03744687B38F635049B5F" : 0,
+    "5887BA6A138C72A367E87CC7D272034CEACE05CC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A418F8D9-4D02-4057-92F4-9DD3F494CB44",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CDCE3C850B26B5E119E03744687B38F635049B5F" : "AisleAideDemo\/",
+    "5887BA6A138C72A367E87CC7D272034CEACE05CC" : "AisleAide\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AisleAideDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AisleAideDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MyerSoftSolutions\/AisleAide.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5887BA6A138C72A367E87CC7D272034CEACE05CC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MyerSoftSolutions\/AisleAideDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CDCE3C850B26B5E119E03744687B38F635049B5F"
+    }
+  ]
+}
