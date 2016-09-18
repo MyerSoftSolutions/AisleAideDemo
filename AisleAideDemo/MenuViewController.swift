@@ -10,9 +10,18 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var leftStackView: UIStackView!
+    @IBOutlet weak var leftWidthCon: NSLayoutConstraint!
+    
+    @IBOutlet weak var rightStackView: UIStackView!
+    @IBOutlet weak var rightWidthCon: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        self.leftWidthCon.constant = screenSize.width/2 - 12
+        self.rightWidthCon.constant = self.leftWidthCon.constant
+        
         // Do any additional setup after loading the view.
     }
 
