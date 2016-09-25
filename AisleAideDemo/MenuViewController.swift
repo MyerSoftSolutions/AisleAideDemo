@@ -9,6 +9,7 @@
 import UIKit
 
 class MenuViewController: UIViewController {
+    @IBOutlet weak var titleLabel: UILabel!
 
     @IBOutlet weak var leftStackView: UIStackView!
     @IBOutlet weak var leftWidthCon: NSLayoutConstraint!
@@ -22,6 +23,10 @@ class MenuViewController: UIViewController {
         self.leftWidthCon.constant = screenSize.width/2 - 12
         self.rightWidthCon.constant = self.leftWidthCon.constant
         
+//        let attrString = NSMutableAttributedString(string:"Aisle", attributes: [NSFontAttributeName : UIFont(name: "StagSans-Bold", size: 32)!])
+//        let attrString2 = NSMutableAttributedString(string: "aide", attributes: [NSFontAttributeName: UIFont(name: "StagSans-Book", size: 32)!])
+//        attrString.appendAttributedString(attrString2)
+//        self.titleLabel.attributedText = attrString
         // Do any additional setup after loading the view.
     }
 

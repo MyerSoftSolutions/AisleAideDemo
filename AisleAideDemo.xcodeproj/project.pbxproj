@@ -19,6 +19,8 @@
 		D94178DA1D6E73F900FF79CC /* Patron.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178D81D6E73F900FF79CC /* Patron.swift */; };
 		D94178DC1D6E743F00FF79CC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178DB1D6E743F00FF79CC /* Store.swift */; };
 		D94178DD1D6E743F00FF79CC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178DB1D6E743F00FF79CC /* Store.swift */; };
+		D988856D1D90ED650065510D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D988856C1D90ED650065510D /* CoreLocation.framework */; };
+		D988856F1D90ED700065510D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D988856E1D90ED700065510D /* MapKit.framework */; };
 		D99DF2031D874E99000EF6EF /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DF2021D874E99000EF6EF /* ItemList.swift */; };
 		D99DF2041D874E99000EF6EF /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DF2021D874E99000EF6EF /* ItemList.swift */; };
 		D99DF20F1D889A7B000EF6EF /* StoreModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = D99DF20E1D889A7B000EF6EF /* StoreModel.plist */; };
@@ -56,6 +58,8 @@
 		D94178D51D6E73D100FF79CC /* AisleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AisleList.swift; sourceTree = "<group>"; };
 		D94178D81D6E73F900FF79CC /* Patron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patron.swift; sourceTree = "<group>"; };
 		D94178DB1D6E743F00FF79CC /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		D988856C1D90ED650065510D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D988856E1D90ED700065510D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D99DF2021D874E99000EF6EF /* ItemList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemList.swift; path = ../ItemList.swift; sourceTree = "<group>"; };
 		D99DF20E1D889A7B000EF6EF /* StoreModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StoreModel.plist; sourceTree = "<group>"; };
 		D99DF2111D889C7B000EF6EF /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D988856F1D90ED700065510D /* MapKit.framework in Frameworks */,
+				D988856D1D90ED650065510D /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +115,8 @@
 		D9AB11931D6E18D5004A1875 = {
 			isa = PBXGroup;
 			children = (
+				D988856E1D90ED700065510D /* MapKit.framework */,
+				D988856C1D90ED650065510D /* CoreLocation.framework */,
 				D9AB119E1D6E18D5004A1875 /* AisleAideDemo */,
 				D9AB11B61D6E18D5004A1875 /* AisleAideDemoTests */,
 				D9AB119D1D6E18D5004A1875 /* Products */,
