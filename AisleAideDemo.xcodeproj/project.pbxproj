@@ -21,6 +21,8 @@
 		D94178DD1D6E743F00FF79CC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178DB1D6E743F00FF79CC /* Store.swift */; };
 		D988856D1D90ED650065510D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D988856C1D90ED650065510D /* CoreLocation.framework */; };
 		D988856F1D90ED700065510D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D988856E1D90ED700065510D /* MapKit.framework */; };
+		D99CDB9D1DA2EE1900346A15 /* Groker.plist in Resources */ = {isa = PBXBuildFile; fileRef = D99CDB9C1DA2EE1900346A15 /* Groker.plist */; };
+		D99CDB9E1DA2EE1900346A15 /* Groker.plist in Resources */ = {isa = PBXBuildFile; fileRef = D99CDB9C1DA2EE1900346A15 /* Groker.plist */; };
 		D99DF2031D874E99000EF6EF /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DF2021D874E99000EF6EF /* ItemList.swift */; };
 		D99DF2041D874E99000EF6EF /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DF2021D874E99000EF6EF /* ItemList.swift */; };
 		D99DF20F1D889A7B000EF6EF /* StoreModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = D99DF20E1D889A7B000EF6EF /* StoreModel.plist */; };
@@ -60,6 +62,7 @@
 		D94178DB1D6E743F00FF79CC /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		D988856C1D90ED650065510D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D988856E1D90ED700065510D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D99CDB9C1DA2EE1900346A15 /* Groker.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Groker.plist; sourceTree = "<group>"; };
 		D99DF2021D874E99000EF6EF /* ItemList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemList.swift; path = ../ItemList.swift; sourceTree = "<group>"; };
 		D99DF20E1D889A7B000EF6EF /* StoreModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StoreModel.plist; sourceTree = "<group>"; };
 		D99DF2111D889C7B000EF6EF /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 				D99DF21A1D8903C1000EF6EF /* freshProduce.jpg */,
 				D9AB11AE1D6E18D5004A1875 /* Info.plist */,
 				D99DF20E1D889A7B000EF6EF /* StoreModel.plist */,
+				D99CDB9C1DA2EE1900346A15 /* Groker.plist */,
 				D9AB11A61D6E18D5004A1875 /* AisleAideDemo.xcdatamodeld */,
 			);
 			path = AisleAideDemo;
@@ -245,6 +249,7 @@
 				D99DF21B1D8903C1000EF6EF /* freshProduce.jpg in Resources */,
 				D9AB11AD1D6E18D5004A1875 /* LaunchScreen.storyboard in Resources */,
 				D99DF2181D8902AF000EF6EF /* AisleAide_v1.pdf in Resources */,
+				D99CDB9D1DA2EE1900346A15 /* Groker.plist in Resources */,
 				D9AB11AA1D6E18D5004A1875 /* Assets.xcassets in Resources */,
 				D9AB11A51D6E18D5004A1875 /* Main.storyboard in Resources */,
 			);
@@ -254,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99CDB9E1DA2EE1900346A15 /* Groker.plist in Resources */,
 				D99DF2101D889A7B000EF6EF /* StoreModel.plist in Resources */,
 				D99DF21C1D8903C1000EF6EF /* freshProduce.jpg in Resources */,
 				D99DF2191D8902AF000EF6EF /* AisleAide_v1.pdf in Resources */,

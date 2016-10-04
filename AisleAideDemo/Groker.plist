@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Aisles</key>
+	<array>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Bread</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Sandwich Bread</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Hot Dog Buns</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Muffins</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Hamburger Buns</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Nuts</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Peanuts</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cashews</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Granola</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Almonds</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Stuffing &amp; Gravy</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Sauce</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Gravy</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Stuffing</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Rice &amp; Dry Beans</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Rice</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Beans</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Pasta</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Macaroni &amp; Cheese</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Dry Cheese</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Pasta Sauce</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Pasta</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Soup</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Soup</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Dry Soup</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Canned Foods</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Canned Meat</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Tuna</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Instant Potatoes</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Canned Vegetables</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Canned Veggies</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Canned Beans</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Canned Tomatoes</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Bulk Foods</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Buns &amp; Rolls</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Muffins</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Bagels</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Buns</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Rolls</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Crackers</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Crackers</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Sweets</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Breads</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Specialty Bread</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Variety Bread</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Canned Fruit</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Canned Fruit</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Pancake Mix &amp; Syrup</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Pancake Mix</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Syrup</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Cereal</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Cereal</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Hot Cereal</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Juice Boxes</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Juice Boxes</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Peanut Butter</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Peanut Butter</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Snacks</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Granola Bars</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Fruit Cups</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Multipack Snacks</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Pudding Cups</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Coffee &amp; Tea</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Coffee</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Tea</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Disposable Pans</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Pans</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Flour &amp; Sugar</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Flour</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Sugar</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Oil &amp; Shortening</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Canola Oil</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Vegetable Oil</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Shortening</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Spices &amp; Flavorings</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Spices</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Seasonings</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Baking Ingredients</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Kitchenware</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Small Appliances</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Pots &amp; Pans</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Condiments</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Mustard</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Ketchup</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Pickles &amp; Olives</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Pickles</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Olives</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Wine Coolers</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Salad Dressings</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Salad Dressings</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Croutons</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>International</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Latin Foods</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Seasonal</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Storage</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Paper Towels</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Paper Towels</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Bath Tissue</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Facial Tissue</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Diapers</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Diapers</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Baby Food</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Baby Food</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Infant Care</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Q-Tips</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Baby Powder</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Baby Oil</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Gift Wrap</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Gift Wrap</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Greeting Cards</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Greeting Card</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Drinks</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Soft Drinks</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Energy Drink</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Bottled Water</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Sports Drink</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Wine</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Reisling</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Chardonnay</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Box Wine</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cabernet Sauvignon</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Wine</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Beer</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Beer</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cocktails</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Frozen Meals</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Frozen Meals</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Frozen Potatoes</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Frozen Potatoes</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Frozen Fries</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Frozen Vegetables</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Frozen Vegetables</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Frozen Snacks</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Frozen Snacks</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Frozen Pizza</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Frozen Pizza</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Frozen Meats</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Frozen Meats</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Frozen Seafood</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Frozen Seafood</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Frozen Breads</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Frozen Breads</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Ice Cream</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Ice Cream</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Ice Cream Toppings</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Ice Cream Cones</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Frozen Breakfast</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Frozen Breakfast</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Frozen Desserts</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Frozen Desserts</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Frozen Novelties</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Frozen Novelties</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
