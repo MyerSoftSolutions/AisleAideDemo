@@ -41,6 +41,10 @@
 		D9AB11AA1D6E18D5004A1875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9AB11A91D6E18D5004A1875 /* Assets.xcassets */; };
 		D9AB11AD1D6E18D5004A1875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AB11AB1D6E18D5004A1875 /* LaunchScreen.storyboard */; };
 		D9AB11B81D6E18D5004A1875 /* AisleAideDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AB11B71D6E18D5004A1875 /* AisleAideDemoTests.swift */; };
+		D9EA10241DA58C9C00296367 /* ProdGrpCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA10231DA58C9C00296367 /* ProdGrpCollectionViewController.swift */; };
+		D9EA10251DA58C9C00296367 /* ProdGrpCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA10231DA58C9C00296367 /* ProdGrpCollectionViewController.swift */; };
+		D9EA10271DA598E000296367 /* AisleAideSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA10261DA598E000296367 /* AisleAideSetupViewController.swift */; };
+		D9EA10281DA598E000296367 /* AisleAideSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA10261DA598E000296367 /* AisleAideSetupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,8 @@
 		D9AB11B31D6E18D5004A1875 /* AisleAideDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AisleAideDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AB11B71D6E18D5004A1875 /* AisleAideDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AisleAideDemoTests.swift; sourceTree = "<group>"; };
 		D9AB11B91D6E18D5004A1875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9EA10231DA58C9C00296367 /* ProdGrpCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdGrpCollectionViewController.swift; sourceTree = "<group>"; };
+		D9EA10261DA598E000296367 /* AisleAideSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AisleAideSetupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +144,10 @@
 		D9AB119E1D6E18D5004A1875 /* AisleAideDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D9EA10261DA598E000296367 /* AisleAideSetupViewController.swift */,
 				D99DF2111D889C7B000EF6EF /* MenuViewController.swift */,
 				D99DF2141D889DF0000EF6EF /* StoreSelectionViewController.swift */,
+				D9EA10231DA58C9C00296367 /* ProdGrpCollectionViewController.swift */,
 				D94178CE1D6E6DCD00FF79CC /* AisleAide System Objects */,
 				D9AB11A91D6E18D5004A1875 /* Assets.xcassets */,
 				D9AB11A31D6E18D5004A1875 /* Main.storyboard */,
@@ -278,6 +286,8 @@
 				D9AB11A01D6E18D5004A1875 /* AppDelegate.swift in Sources */,
 				D94178DC1D6E743F00FF79CC /* Store.swift in Sources */,
 				D99DF2151D889DF0000EF6EF /* StoreSelectionViewController.swift in Sources */,
+				D9EA10241DA58C9C00296367 /* ProdGrpCollectionViewController.swift in Sources */,
+				D9EA10271DA598E000296367 /* AisleAideSetupViewController.swift in Sources */,
 				D94178D91D6E73F900FF79CC /* Patron.swift in Sources */,
 				D9AB11A81D6E18D5004A1875 /* AisleAideDemo.xcdatamodeld in Sources */,
 				D99DF2031D874E99000EF6EF /* ItemList.swift in Sources */,
@@ -297,9 +307,11 @@
 				D94178D11D6E6E1800FF79CC /* ProductGroup.swift in Sources */,
 				D99DF2131D889C7B000EF6EF /* MenuViewController.swift in Sources */,
 				D99DF2161D889DF0000EF6EF /* StoreSelectionViewController.swift in Sources */,
+				D9EA10251DA58C9C00296367 /* ProdGrpCollectionViewController.swift in Sources */,
 				D99DF2041D874E99000EF6EF /* ItemList.swift in Sources */,
 				D9AB11B81D6E18D5004A1875 /* AisleAideDemoTests.swift in Sources */,
 				D94178D71D6E73D100FF79CC /* AisleList.swift in Sources */,
+				D9EA10281DA598E000296367 /* AisleAideSetupViewController.swift in Sources */,
 				D94178DA1D6E73F900FF79CC /* Patron.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

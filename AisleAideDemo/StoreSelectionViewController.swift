@@ -20,7 +20,7 @@ class StoreSelectionCell : UITableViewCell {
     @IBOutlet weak var timeClosingLabel: UILabel!
 }
 
-class StoreSelectionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class StoreSelectionViewController: AisleAideSetupViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var storeTableView: UITableView!
@@ -49,7 +49,7 @@ class StoreSelectionViewController: UIViewController, UITableViewDelegate, UITab
         cell.selectionStyle = .None
         
         if indexPath.row == 0{
-            cell.nameLabel.text = "Kroger"
+            cell.nameLabel.text = "Groker"
             cell.likesLabel.text = "15"
             cell.logoImageView.image = UIImage(named: "kroger")
             cell.plazaNameLabel.text = "Moreland Shopping Plaza"
@@ -68,8 +68,19 @@ class StoreSelectionViewController: UIViewController, UITableViewDelegate, UITab
     }
    
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let cell : StoreSelectionCell = sender as! StoreSelectionCell
+        let idx  = self.storeTableView.indexPathForCell(cell)
+        
+        if segue.identifier == "StoreSelectSegue" {
+            let vc  = segue.destinationViewController as! ProdGrpCollectionViewController
+            if idx!.row == 0 {
+                vc.storeString = "Groker"
+            } else {
+                vc.storeString = "StoreModel"
+            }
+        }
+    }
 
 }

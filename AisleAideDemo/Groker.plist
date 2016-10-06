@@ -9,47 +9,16 @@
 			<array>
 				<dict>
 					<key>name</key>
-					<string>Bread</string>
+					<string>Produce</string>
 					<key>Items</key>
 					<array>
 						<dict>
 							<key>name</key>
-							<string>Sandwich Bread</string>
+							<string>Fruits</string>
 						</dict>
 						<dict>
 							<key>name</key>
-							<string>Hot Dog Buns</string>
-						</dict>
-						<dict>
-							<key>name</key>
-							<string>Muffins</string>
-						</dict>
-						<dict>
-							<key>name</key>
-							<string>Hamburger Buns</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>name</key>
-					<string>Nuts</string>
-					<key>Items</key>
-					<array>
-						<dict>
-							<key>name</key>
-							<string>Peanuts</string>
-						</dict>
-						<dict>
-							<key>name</key>
-							<string>Cashews</string>
-						</dict>
-						<dict>
-							<key>name</key>
-							<string>Granola</string>
-						</dict>
-						<dict>
-							<key>name</key>
-							<string>Almonds</string>
+							<string>Fresh Vegetables</string>
 						</dict>
 					</array>
 				</dict>

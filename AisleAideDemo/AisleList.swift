@@ -8,6 +8,28 @@
 
 import UIKit
 
+
+class Lyle {
+    static let defaultHelper = Lyle()
+    
+    var currentItemList : ItemList?
+    var currentPatron : Patron?
+    var currentStore : Store?
+    
+    func addSelectedItem(selectedItem: Item) -> Void {
+        if self.currentItemList == nil {
+            self.currentItemList = ItemList()
+            self.currentItemList?.addNewItem(selectedItem)
+        } else {
+            self.currentItemList?.addNewItem(selectedItem)
+        }
+    }
+    
+    func removeLastItem() {
+        self.currentItemList?.itemArray.removeAtIndex((self.currentItemList?.itemArray.count)! - 1)
+    }
+}
+
 class AisleList: NSObject {
     var aisleArray : [Aisle] = []
     

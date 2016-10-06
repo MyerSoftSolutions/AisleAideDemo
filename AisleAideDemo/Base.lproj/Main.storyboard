@@ -69,7 +69,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="HHK-7b-FG2" kind="show" identifier="StoreSelectSegue" id="E9H-bF-QmJ"/>
+                                                    <segue destination="ZbO-mf-SgK" kind="show" identifier="StoreSelectSegue" id="E9H-bF-QmJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V6-bs-0k0">
@@ -309,8 +309,7 @@
                                                             <exclude reference="P4W-fb-dIm"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="89" y="0.0" width="165" height="28"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="P4W-fb-dIm"/>
                                                         </mask>
@@ -487,7 +486,7 @@
                                             <outlet property="plazaNameLabel" destination="sEX-Ud-CDm" id="KlO-fE-eBi"/>
                                             <outlet property="streetPhoneLabel" destination="rRU-ht-QMu" id="8E5-fS-81E"/>
                                             <outlet property="timeClosingLabel" destination="UQY-AP-HWl" id="VvO-nv-nhy"/>
-                                            <segue destination="AhC-Xu-OO7" kind="show" identifier="ChooseProdGrpSegue" id="bJR-LG-iV4"/>
+                                            <segue destination="r5V-uf-fbm" kind="show" identifier="ChooseProdGrpSegue" id="2Jm-fj-qCg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -500,7 +499,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="tqp-PK-plc">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="221"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="157"/>
                                     </constraint>
                                 </constraints>
                                 <variation key="default">
@@ -517,7 +516,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vbg-I1-up2" firstAttribute="top" secondItem="18n-pN-g36" secondAttribute="top" id="BP5-2h-Fv0"/>
+                            <constraint firstItem="vbg-I1-up2" firstAttribute="top" secondItem="18n-pN-g36" secondAttribute="top" id="BP5-2h-Fv0">
+                                <variation key="heightClass=regular-widthClass=compact" constant="64"/>
+                            </constraint>
                             <constraint firstItem="vbg-I1-up2" firstAttribute="leading" secondItem="18n-pN-g36" secondAttribute="leading" id="FmW-kd-aIC"/>
                             <constraint firstItem="Twz-Un-vNh" firstAttribute="top" secondItem="vbg-I1-up2" secondAttribute="bottom" id="Not-tA-es1"/>
                             <constraint firstItem="Twz-Un-vNh" firstAttribute="top" secondItem="vbg-I1-up2" secondAttribute="bottom" id="afu-6P-QhR"/>
@@ -568,12 +569,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q02-Y3-bzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2642.25" y="298.875"/>
+            <point key="canvasLocation" x="4083.75" y="325.875"/>
         </scene>
         <!--Choose Product Group-->
         <scene sceneID="U2v-Yp-AhY">
             <objects>
-                <viewController id="r5V-uf-fbm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProdGrpCollectionViewController" id="r5V-uf-fbm" customClass="ProdGrpCollectionViewController" customModule="AisleAideDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h2l-1k-3vZ"/>
                         <viewControllerLayoutGuide type="bottom" id="zkB-Fl-6Ty"/>
@@ -600,36 +601,57 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <segue destination="zbR-n1-OcI" kind="show" id="iI7-9c-VGG"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="180" width="375" height="487"/>
-                                </variation>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zkB-Fl-6Ty" firstAttribute="top" secondItem="uvS-t4-qYb" secondAttribute="bottom" id="Hty-Ts-P6d"/>
+                            <constraint firstAttribute="trailing" secondItem="uvS-t4-qYb" secondAttribute="trailing" id="OQj-z7-sJE"/>
+                            <constraint firstItem="uvS-t4-qYb" firstAttribute="top" secondItem="h2l-1k-3vZ" secondAttribute="bottom" constant="116" id="ctr-Xu-0z1"/>
+                            <constraint firstItem="uvS-t4-qYb" firstAttribute="leading" secondItem="EdE-8X-Q2F" secondAttribute="leading" id="eOg-ov-0gg"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="uvS-t4-qYb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Hty-Ts-P6d"/>
+                                <exclude reference="OQj-z7-sJE"/>
+                                <exclude reference="ctr-Xu-0z1"/>
+                                <exclude reference="eOg-ov-0gg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="uvS-t4-qYb"/>
                             </mask>
+                            <mask key="constraints">
+                                <include reference="Hty-Ts-P6d"/>
+                                <include reference="OQj-z7-sJE"/>
+                                <include reference="ctr-Xu-0z1"/>
+                                <include reference="eOg-ov-0gg"/>
+                            </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Choose Product Group" id="iPH-kl-qMw"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="collectionView" destination="uvS-t4-qYb" id="iGg-Kz-xCt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCQ-SY-mqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4410.75" y="298.875"/>
+            <point key="canvasLocation" x="5007.75" y="331.875"/>
         </scene>
-        <!--View Controller-->
+        <!--Choose Item-->
         <scene sceneID="Drf-wf-fLH">
             <objects>
-                <viewController id="zbR-n1-OcI" sceneMemberID="viewController">
+                <viewController title="Choose Item" id="zbR-n1-OcI" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K1T-zM-pyJ"/>
                         <viewControllerLayoutGuide type="bottom" id="3jp-UY-bCD"/>
@@ -658,20 +680,35 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="180" width="375" height="487"/>
-                                </variation>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3Cd-Ak-gOp" secondAttribute="trailing" id="LJs-fi-Zew"/>
+                            <constraint firstItem="3jp-UY-bCD" firstAttribute="top" secondItem="3Cd-Ak-gOp" secondAttribute="bottom" id="av7-jr-Df1"/>
+                            <constraint firstItem="3Cd-Ak-gOp" firstAttribute="top" secondItem="K1T-zM-pyJ" secondAttribute="bottom" constant="116" id="hbX-op-JRq"/>
+                            <constraint firstItem="3Cd-Ak-gOp" firstAttribute="leading" secondItem="H3F-yY-7Qk" secondAttribute="leading" id="kOS-7a-LpF"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="3Cd-Ak-gOp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="av7-jr-Df1"/>
+                                <exclude reference="LJs-fi-Zew"/>
+                                <exclude reference="hbX-op-JRq"/>
+                                <exclude reference="kOS-7a-LpF"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="3Cd-Ak-gOp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="av7-jr-Df1"/>
+                                <include reference="LJs-fi-Zew"/>
+                                <include reference="hbX-op-JRq"/>
+                                <include reference="kOS-7a-LpF"/>
                             </mask>
                         </variation>
                     </view>
@@ -679,26 +716,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWP-au-jA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5214.75" y="298.875"/>
+            <point key="canvasLocation" x="5921.25" y="331.875"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="1q4-J1-qA1">
+        <scene sceneID="hDQ-Wf-u68">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AhC-Xu-OO7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZbO-mf-SgK" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kvu-t2-2mm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QKw-Rn-S5R">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="r5V-uf-fbm" kind="relationship" relationship="rootViewController" id="8k1-pd-udq"/>
+                        <segue destination="HHK-7b-FG2" kind="relationship" relationship="rootViewController" id="72P-0q-hb7"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gtk-sr-quA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9AZ-DG-VMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3464.25" y="298.875"/>
+            <point key="canvasLocation" x="3203.25" y="325.875"/>
         </scene>
     </scenes>
     <resources>
