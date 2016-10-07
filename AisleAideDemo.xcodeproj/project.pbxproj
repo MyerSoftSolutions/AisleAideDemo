@@ -19,6 +19,8 @@
 		D94178DA1D6E73F900FF79CC /* Patron.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178D81D6E73F900FF79CC /* Patron.swift */; };
 		D94178DC1D6E743F00FF79CC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178DB1D6E743F00FF79CC /* Store.swift */; };
 		D94178DD1D6E743F00FF79CC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178DB1D6E743F00FF79CC /* Store.swift */; };
+		D97BC8271DA8236B00C7AD82 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97BC8261DA8236B00C7AD82 /* ItemCollectionViewController.swift */; };
+		D97BC8281DA8236B00C7AD82 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97BC8261DA8236B00C7AD82 /* ItemCollectionViewController.swift */; };
 		D988856D1D90ED650065510D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D988856C1D90ED650065510D /* CoreLocation.framework */; };
 		D988856F1D90ED700065510D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D988856E1D90ED700065510D /* MapKit.framework */; };
 		D99CDB9D1DA2EE1900346A15 /* Groker.plist in Resources */ = {isa = PBXBuildFile; fileRef = D99CDB9C1DA2EE1900346A15 /* Groker.plist */; };
@@ -64,6 +66,7 @@
 		D94178D51D6E73D100FF79CC /* AisleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AisleList.swift; sourceTree = "<group>"; };
 		D94178D81D6E73F900FF79CC /* Patron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patron.swift; sourceTree = "<group>"; };
 		D94178DB1D6E743F00FF79CC /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		D97BC8261DA8236B00C7AD82 /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
 		D988856C1D90ED650065510D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D988856E1D90ED700065510D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D99CDB9C1DA2EE1900346A15 /* Groker.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Groker.plist; sourceTree = "<group>"; };
@@ -148,6 +151,7 @@
 				D99DF2111D889C7B000EF6EF /* MenuViewController.swift */,
 				D99DF2141D889DF0000EF6EF /* StoreSelectionViewController.swift */,
 				D9EA10231DA58C9C00296367 /* ProdGrpCollectionViewController.swift */,
+				D97BC8261DA8236B00C7AD82 /* ItemCollectionViewController.swift */,
 				D94178CE1D6E6DCD00FF79CC /* AisleAide System Objects */,
 				D9AB11A91D6E18D5004A1875 /* Assets.xcassets */,
 				D9AB11A31D6E18D5004A1875 /* Main.storyboard */,
@@ -290,6 +294,7 @@
 				D9EA10271DA598E000296367 /* AisleAideSetupViewController.swift in Sources */,
 				D94178D91D6E73F900FF79CC /* Patron.swift in Sources */,
 				D9AB11A81D6E18D5004A1875 /* AisleAideDemo.xcdatamodeld in Sources */,
+				D97BC8271DA8236B00C7AD82 /* ItemCollectionViewController.swift in Sources */,
 				D99DF2031D874E99000EF6EF /* ItemList.swift in Sources */,
 				D94178D61D6E73D100FF79CC /* AisleList.swift in Sources */,
 				D94178D31D6E6E3A00FF79CC /* Aisle.swift in Sources */,
@@ -311,6 +316,7 @@
 				D99DF2041D874E99000EF6EF /* ItemList.swift in Sources */,
 				D9AB11B81D6E18D5004A1875 /* AisleAideDemoTests.swift in Sources */,
 				D94178D71D6E73D100FF79CC /* AisleList.swift in Sources */,
+				D97BC8281DA8236B00C7AD82 /* ItemCollectionViewController.swift in Sources */,
 				D9EA10281DA598E000296367 /* AisleAideSetupViewController.swift in Sources */,
 				D94178DA1D6E73F900FF79CC /* Patron.swift in Sources */,
 			);

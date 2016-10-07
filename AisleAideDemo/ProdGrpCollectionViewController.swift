@@ -8,19 +8,20 @@
 
 import UIKit
 
+class ProdGrpCollectionCell : UICollectionViewCell {
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameLabelView: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
+}
 
 class ProdGrpCollectionViewController: AisleAideSetupViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var prodGrpArray : [ProductGroup]?
+    var prodGrpArray : [ProductGroup] = []
     var storeString : String?
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if (storeString  != nil){
-            self.initialSetUp()
-        }
 
         self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         
@@ -31,22 +32,35 @@ class ProdGrpCollectionViewController: AisleAideSetupViewController, UICollectio
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func initialSetUp() {
-        self.lyle = Lyle.defaultHelper
-        self.lyle?.currentStore = Store.sharedStore
-        
-        self.lyle?.currentStore?.createAisleList(storeString!)
-        self.prodGrpArray = self.lyle?.currentStore?.aisleList.getAllProdGrps()
-        
-    }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.prodGrpArray!.count
+        return self.prodGrpArray.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ProdGrpCollectionCell", forIndexPath: indexPath) as! ProdGrpCollectionCell
+        
+        let prodGp = self.prodGrpArray[indexPath.row]
+        
+        cell.nameLabel.text = prodGp.name
+//        cell.imageView.image = UIImage(named: )
+        
+        return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let cell = sender as! ItemCollectionCell
+        let idxPath = self.collectionView.indexPathForCell(cell)
+        
+        let pGrp = self.prodGrpArray[idxPath!.row]
+        
+        if segue.identifier == "SelectItemSegue" {
+            let vc = segue.destinationViewController as! ItemCollectionViewController
+            vc.itemArray = []
+            vc.itemArray = pGrp.items
+            vc.lyle = self.lyle
+        }
     }
 
 }

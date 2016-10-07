@@ -73,14 +73,24 @@ class StoreSelectionViewController: AisleAideSetupViewController, UITableViewDel
         let cell : StoreSelectionCell = sender as! StoreSelectionCell
         let idx  = self.storeTableView.indexPathForCell(cell)
         
-        if segue.identifier == "StoreSelectSegue" {
+        if segue.identifier == "ChooseProdGrpSegue" {
             let vc  = segue.destinationViewController as! ProdGrpCollectionViewController
+            
+            var storeString = ""
             if idx!.row == 0 {
-                vc.storeString = "Groker"
+                storeString = "Groker"
             } else {
-                vc.storeString = "StoreModel"
+                storeString = "StoreModel"
             }
+            
+            vc.lyle = Lyle.defaultHelper
+            vc.lyle?.currentStore = Store.sharedStore
+            vc.lyle?.currentStore?.createAisleList(storeString)
+            vc.prodGrpArray = (self.lyle?.currentStore?.aisleList.getAllProdGrps())!
+            print(vc.prodGrpArray)
+
         }
     }
+
 
 }
