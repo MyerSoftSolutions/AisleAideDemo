@@ -13,7 +13,7 @@ class ItemCollectionCell : ProdGrpCollectionCell {
 
 }
 
-class ItemCollectionViewController: AisleAideSetupViewController, UICollectionViewDelegate, UICollectionViewDataSource  {
+class ItemCollectionViewController: AisleAideSetupViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     var itemArray : [Item] = []
 
     override func viewDidLoad() {
@@ -44,4 +44,29 @@ class ItemCollectionViewController: AisleAideSetupViewController, UICollectionVi
         return cell
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let alertController = UIAlertController(title: nil, message: "Add more items?", preferredStyle: .actionSheet)
+        
+        let yesAction = UIAlertAction(title: "Yes", style: .default) { (action) in
+            // ...
+        }
+        alertController.addAction(yesAction)
+        
+        let noAction = UIAlertAction(title: "No", style: .destructive) { (action) in
+            self.performSegue(withIdentifier: "ShowListSegue", sender: self)
+        }
+        alertController.addAction(noAction)
+        
+        self.present(alertController, animated: true) {
+            // ...
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowListSegue" {
+            let vc = segue.destination as! ItemListViewController
+            vc.lyle = self.lyle
+        }
+    }
+    
 }

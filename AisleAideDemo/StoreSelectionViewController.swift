@@ -38,6 +38,9 @@ class StoreSelectionViewController: AisleAideSetupViewController, UITableViewDel
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func dismiss(_ sender: Any) {
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
@@ -66,7 +69,6 @@ class StoreSelectionViewController: AisleAideSetupViewController, UITableViewDel
 
         return cell
     }
-   
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -93,5 +95,6 @@ class StoreSelectionViewController: AisleAideSetupViewController, UITableViewDel
         }
     }
 
+    
 
 }
