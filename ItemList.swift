@@ -11,7 +11,7 @@ import UIKit
 class ItemList: NSObject {
     var itemArray : [Item] = []
     
-    func addNewItem(item: Item) {
+    func addNewItem(_ item: Item) {
         self.itemArray.append(item)
     }
     

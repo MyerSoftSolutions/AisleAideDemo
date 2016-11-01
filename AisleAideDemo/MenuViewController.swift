@@ -19,7 +19,7 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        let screenSize: CGRect = UIScreen.main.bounds
         self.leftWidthCon.constant = screenSize.width/2 - 12
         self.rightWidthCon.constant = self.leftWidthCon.constant
         

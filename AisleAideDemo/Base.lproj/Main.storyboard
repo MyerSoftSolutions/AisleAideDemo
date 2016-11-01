@@ -930,6 +930,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="zbR-n1-OcI" id="oti-Fc-eMx"/>
+                                    <outlet property="delegate" destination="zbR-n1-OcI" id="X0u-Zb-ELK"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

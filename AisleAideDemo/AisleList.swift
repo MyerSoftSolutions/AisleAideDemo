@@ -16,7 +16,7 @@ class Lyle {
     var currentPatron : Patron?
     var currentStore : Store?
     
-    func addSelectedItem(selectedItem: Item) -> Void {
+    func addSelectedItem(_ selectedItem: Item) -> Void {
         if self.currentItemList == nil {
             self.currentItemList = ItemList()
             self.currentItemList?.addNewItem(selectedItem)
@@ -26,7 +26,7 @@ class Lyle {
     }
     
     func removeLastItem() {
-        self.currentItemList?.itemArray.removeAtIndex((self.currentItemList?.itemArray.count)! - 1)
+        self.currentItemList?.itemArray.remove(at: (self.currentItemList?.itemArray.count)! - 1)
     }
 }
 
@@ -42,12 +42,12 @@ class AisleList: NSObject {
             }
         }
         
-        arr.sortInPlace({$0.name < $1.name})
+        arr.sort(by: {$0.name! < $1.name!})
         return arr
         
     }
     
-    func isItemInArray(itemArray: [Item], suggestedItem: Item)->Bool{
+    func isItemInArray(_ itemArray: [Item], suggestedItem: Item)->Bool{
         var isInArray : Bool = false
         
         for item in itemArray{
@@ -60,10 +60,11 @@ class AisleList: NSObject {
         return isInArray
     }
     
-    func alsoOnThisAisle(aisle: Aisle, item: Item, itemArray: [Item])->[Item]{
+    func alsoOnThisAisle(_ aisle: Aisle, item: Item, itemArray: [Item])->[Item]{
         var items : [Item] = []
         
-        for var k = 0; k < 3; k += 1 {
+      //  for var k in 0; k < 3; k += 1
+        while items.count <= 2 {
             let randomNum = Int(arc4random_uniform(UInt32(aisle.productGroups.count)))
             let pGroup = aisle.productGroups[randomNum]
             
@@ -71,7 +72,6 @@ class AisleList: NSObject {
             let suggestedItem = pGroup.items[randomNum2]
             
             if suggestedItem == item || self.isItemInArray(items, suggestedItem: suggestedItem) || self.isItemInArray(itemArray, suggestedItem: suggestedItem) {
-                k -= 1
                 continue
             } else {
                 items.append(suggestedItem)
@@ -83,7 +83,7 @@ class AisleList: NSObject {
     
     }
     
-    func oneAisleOver(aisle: Aisle, userItemArray:[Item])->[Item]{
+    func oneAisleOver(_ aisle: Aisle, userItemArray:[Item])->[Item]{
         var items : [Item] = []
         var singleSuggestedItems : [Item] = []
         var doubleSuggestedItems : [Item] = []

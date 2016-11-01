@@ -19,12 +19,12 @@ class AisleAideSetupViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    func createCustomBackButton(btnTitle: String) {
-        self.backBtn = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Done, target: self, action: #selector(AisleAideSetupViewController.navigationBackButtonClicked))
+    func createCustomBackButton(_ btnTitle: String) {
+        self.backBtn = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.done, target: self, action: #selector(AisleAideSetupViewController.navigationBackButtonClicked))
         self.navigationItem.leftBarButtonItem = self.backBtn
     }
     
-    func navigationBackButtonClicked(sender: UIBarButtonItem) {
+    func navigationBackButtonClicked(_ sender: UIBarButtonItem) {
     
     }
     

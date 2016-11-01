@@ -27,7 +27,7 @@ class StoreSelectionViewController: AisleAideSetupViewController, UITableViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        storeTableView.separatorStyle = .None
+        storeTableView.separatorStyle = .none
         storeTableView.rowHeight = UITableViewAutomaticDimension
         storeTableView.estimatedRowHeight = 114.0
 
@@ -39,16 +39,16 @@ class StoreSelectionViewController: AisleAideSetupViewController, UITableViewDel
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("StoreSelectionCell", forIndexPath: indexPath) as! StoreSelectionCell
-        cell.selectionStyle = .None
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StoreSelectionCell", for: indexPath) as! StoreSelectionCell
+        cell.selectionStyle = .none
         
-        if indexPath.row == 0{
+        if (indexPath as NSIndexPath).row == 0{
             cell.nameLabel.text = "Groker"
             cell.likesLabel.text = "15"
             cell.logoImageView.image = UIImage(named: "kroger")
@@ -68,16 +68,16 @@ class StoreSelectionViewController: AisleAideSetupViewController, UITableViewDel
     }
    
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let cell : StoreSelectionCell = sender as! StoreSelectionCell
-        let idx  = self.storeTableView.indexPathForCell(cell)
+        let idx  = self.storeTableView.indexPath(for: cell)
         
         if segue.identifier == "ChooseProdGrpSegue" {
-            let vc  = segue.destinationViewController as! ProdGrpCollectionViewController
+            let vc  = segue.destination as! ProdGrpCollectionViewController
             
             var storeString = ""
-            if idx!.row == 0 {
+            if (idx! as NSIndexPath).row == 0 {
                 storeString = "Groker"
             } else {
                 storeString = "StoreModel"
@@ -86,8 +86,9 @@ class StoreSelectionViewController: AisleAideSetupViewController, UITableViewDel
             vc.lyle = Lyle.defaultHelper
             vc.lyle?.currentStore = Store.sharedStore
             vc.lyle?.currentStore?.createAisleList(storeString)
-            vc.prodGrpArray = (self.lyle?.currentStore?.aisleList.getAllProdGrps())!
-            print(vc.prodGrpArray)
+            print()
+            vc.prodGrpArray = (vc.lyle?.currentStore?.aisleList.getAllProdGrps())!
+            print(vc.prodGrpArray.count)
 
         }
     }

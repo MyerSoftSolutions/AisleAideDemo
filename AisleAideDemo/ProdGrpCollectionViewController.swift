@@ -33,15 +33,15 @@ class ProdGrpCollectionViewController: AisleAideSetupViewController, UICollectio
         // Dispose of any resources that can be recreated.
     }
 
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.prodGrpArray.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ProdGrpCollectionCell", forIndexPath: indexPath) as! ProdGrpCollectionCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProdGrpCollectionCell", for: indexPath) as! ProdGrpCollectionCell
         
-        let prodGp = self.prodGrpArray[indexPath.row]
+        let prodGp = self.prodGrpArray[(indexPath as NSIndexPath).row]
         
         cell.nameLabel.text = prodGp.name
 //        cell.imageView.image = UIImage(named: )
@@ -49,14 +49,14 @@ class ProdGrpCollectionViewController: AisleAideSetupViewController, UICollectio
         return cell
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let cell = sender as! ItemCollectionCell
-        let idxPath = self.collectionView.indexPathForCell(cell)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! ProdGrpCollectionCell
+        let idxPath = self.collectionView.indexPath(for: cell)
         
-        let pGrp = self.prodGrpArray[idxPath!.row]
+        let pGrp = self.prodGrpArray[(idxPath! as NSIndexPath).row]
         
         if segue.identifier == "SelectItemSegue" {
-            let vc = segue.destinationViewController as! ItemCollectionViewController
+            let vc = segue.destination as! ItemCollectionViewController
             vc.itemArray = []
             vc.itemArray = pGrp.items
             vc.lyle = self.lyle
