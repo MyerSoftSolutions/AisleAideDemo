@@ -86,6 +86,8 @@ class StoreSelectionViewController: AisleAideSetupViewController, UITableViewDel
             }
             
             vc.lyle = Lyle.defaultHelper
+            vc.lyle?.currentItemList = ItemList()
+
             vc.lyle?.currentStore = Store.sharedStore
             vc.lyle?.currentStore?.createAisleList(storeString)
             print()

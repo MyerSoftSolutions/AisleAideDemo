@@ -15,7 +15,9 @@ class ItemCollectionCell : ProdGrpCollectionCell {
 
 class ItemCollectionViewController: AisleAideSetupViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     var itemArray : [Item] = []
-
+    var selectedItem : Item?
+    var itemAlreadyExists : Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(itemArray)
@@ -45,26 +47,54 @@ class ItemCollectionViewController: AisleAideSetupViewController, UICollectionVi
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let alertController = UIAlertController(title: nil, message: "Add more items?", preferredStyle: .actionSheet)
-        
-        let yesAction = UIAlertAction(title: "Yes", style: .default) { (action) in
-            // ...
+        self.selectedItem = self.itemArray[indexPath.row]
+        print(self.selectedItem!)
+        print((self.lyle?.currentItemList)!)
+        print(self.selectedItem!)
+
+        if self.isItemInArray(itemList:(self.lyle?.currentItemList)!, suggestedItem:self.selectedItem!) {
+            itemAlreadyExists = true
+            self.shouldPerformSegue(withIdentifier: "AddMoreItemsSegue", sender:self)
+        } else{
+            self.lyle?.addSelectedItem(self.selectedItem!)
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddMoreItemsViewController") as! AddMoreItemsViewController
+//            vc.addItemsDelegate = self;
+//            vc.lyle = self.lyle
+//            self.navigationController?.pushViewController(vc, animated:true)
         }
-        alertController.addAction(yesAction)
         
-        let noAction = UIAlertAction(title: "No", style: .destructive) { (action) in
-            self.performSegue(withIdentifier: "ShowListSegue", sender: self)
-        }
-        alertController.addAction(noAction)
+        self.performSegue(withIdentifier: "MoreItemsSegue", sender: self)
+//        let alertController = UIAlertController(title: nil, message: "Add more items?", preferredStyle: .actionSheet)
+//        
+//        let yesAction = UIAlertAction(title: "Yes", style: .default) { (action) in
+//            // ...
+//        }
+//        alertController.addAction(yesAction)
+//        
+//        let noAction = UIAlertAction(title: "No", style: .destructive) { (action) in
+//            self.performSegue(withIdentifier: "ShowListSegue", sender: self)
+//        }
+//        alertController.addAction(noAction)
+//        
+//        self.present(alertController, animated: true) {
+//            // ...
+//        }
+    }
+    
+    func isItemInArray(itemList: ItemList, suggestedItem: Item) -> Bool {
+        var isInArray = false
         
-        self.present(alertController, animated: true) {
-            // ...
+        for item in itemList.itemArray {
+            if item == suggestedItem {
+                isInArray = true
+            }
         }
+        return isInArray
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowListSegue" {
-            let vc = segue.destination as! ItemListViewController
+        if segue.identifier == "MoreItemsSegue" {
+            let vc = segue.destination as! AddMoreItemsViewController
             vc.lyle = self.lyle
         }
     }

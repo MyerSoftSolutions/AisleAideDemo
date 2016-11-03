@@ -70,7 +70,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="46" height="124"/>
                                                 <color key="backgroundColor" red="0.082352941176470587" green="0.45882352941176469" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="New Shopping List">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="ZbO-mf-SgK" kind="show" identifier="StoreSelectSegue" id="E9H-bF-QmJ"/>
@@ -80,7 +80,7 @@
                                                 <rect key="frame" x="0.0" y="132" width="46" height="124"/>
                                                 <color key="backgroundColor" red="0.082352941176470587" green="0.45882352941176469" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Saved Lists">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                         </subviews>
@@ -105,14 +105,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="46" height="124"/>
                                                 <color key="backgroundColor" red="0.08235294118" green="0.45882352939999999" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Favorite Items">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUv-3r-a15">
                                                 <rect key="frame" x="0.0" y="132" width="46" height="124"/>
                                                 <color key="backgroundColor" red="0.08235294118" green="0.45882352939999999" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Settings">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                         </subviews>
@@ -484,7 +484,7 @@
                                 </connections>
                             </tableView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vbg-I1-up2">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="55" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="tqp-PK-plc">
                                         <variation key="heightClass=regular-widthClass=compact" constant="157"/>
@@ -949,12 +949,82 @@
                         </variation>
                     </view>
                     <connections>
-                        <segue destination="SSm-b5-pMf" kind="show" identifier="ShowListSegue" id="mOR-qN-0Zh"/>
+                        <segue destination="oa6-cg-sI9" kind="show" identifier="MoreItemsSegue" id="tRS-iX-aRx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWP-au-jA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5920.8000000000002" y="331.48425787106447"/>
+        </scene>
+        <!--Add More Items View Controller-->
+        <scene sceneID="maT-qB-Bcn">
+            <objects>
+                <viewController storyboardIdentifier="AddMoreItemsViewController" id="oa6-cg-sI9" customClass="AddMoreItemsViewController" customModule="AisleAideDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yq4-lY-dOa"/>
+                        <viewControllerLayoutGuide type="bottom" id="nam-2A-000"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Msl-Ej-bAC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eNT-CV-qO6">
+                                <rect key="frame" x="24" y="533" width="327" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXa-s7-8rr">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
+                                        <color key="backgroundColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dLd-Ng-o1U"/>
+                                        </constraints>
+                                        <state key="normal" title="Yes">
+                                            <color key="titleColor" red="0.08235294118" green="0.45882352939999999" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addMoreItems:" destination="oa6-cg-sI9" eventType="touchUpInside" id="BUG-e8-EjM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gl-On-5va">
+                                        <rect key="frame" x="0.0" y="60" width="327" height="50"/>
+                                        <color key="backgroundColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="No">
+                                            <color key="titleColor" red="0.08235294118" green="0.45882352939999999" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="SSm-b5-pMf" kind="show" id="YVd-cx-dWs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hXa-s7-8rr" firstAttribute="height" secondItem="2gl-On-5va" secondAttribute="height" id="gzr-2K-Cd0"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add More Items?" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlf-Pm-A5J">
+                                <rect key="frame" x="244" y="153" width="107" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="CA4-mr-Yih"/>
+                                    <constraint firstAttribute="height" constant="169" id="gKu-1n-tbR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="37"/>
+                                <color key="textColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.08235294118" green="0.45882352939999999" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eNT-CV-qO6" firstAttribute="centerX" secondItem="Msl-Ej-bAC" secondAttribute="centerX" id="FzU-6k-Eyl"/>
+                            <constraint firstItem="qlf-Pm-A5J" firstAttribute="top" secondItem="yq4-lY-dOa" secondAttribute="bottom" constant="89" id="OoG-J8-tYf"/>
+                            <constraint firstAttribute="trailing" secondItem="eNT-CV-qO6" secondAttribute="trailing" constant="24" id="cfT-T3-k7X"/>
+                            <constraint firstItem="nam-2A-000" firstAttribute="top" secondItem="eNT-CV-qO6" secondAttribute="bottom" constant="24" id="dSC-Qf-d9O"/>
+                            <constraint firstItem="eNT-CV-qO6" firstAttribute="top" secondItem="qlf-Pm-A5J" secondAttribute="bottom" constant="211" id="rgP-0L-x7J"/>
+                            <constraint firstItem="eNT-CV-qO6" firstAttribute="leading" secondItem="Msl-Ej-bAC" secondAttribute="leading" constant="24" id="uxE-hy-kSn"/>
+                            <constraint firstAttribute="trailing" secondItem="qlf-Pm-A5J" secondAttribute="trailing" constant="24" id="z8z-4T-lbl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Wu-Co-h2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6913" y="331"/>
         </scene>
         <!--Item List View Controller-->
         <scene sceneID="kOh-Nr-1eC">
@@ -1022,7 +1092,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugW-0S-rcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6152.8000000000002" y="1074.5127436281859"/>
+            <point key="canvasLocation" x="7164" y="1073"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hDQ-Wf-u68">

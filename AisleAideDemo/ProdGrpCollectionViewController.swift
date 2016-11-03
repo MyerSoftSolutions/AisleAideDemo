@@ -22,7 +22,7 @@ class ProdGrpCollectionViewController: AisleAideSetupViewController, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         
         // Do any additional setup after loading the view.

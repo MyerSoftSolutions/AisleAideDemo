@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D926E4401DCBA5C7009D35A2 /* AddMoreItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D926E43F1DCBA5C7009D35A2 /* AddMoreItemsViewController.swift */; };
+		D926E4411DCBA5C7009D35A2 /* AddMoreItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D926E43F1DCBA5C7009D35A2 /* AddMoreItemsViewController.swift */; };
 		D94178CC1D6E6A7600FF79CC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178CB1D6E6A7600FF79CC /* Item.swift */; };
 		D94178CD1D6E6A7600FF79CC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178CB1D6E6A7600FF79CC /* Item.swift */; };
 		D94178D01D6E6E1800FF79CC /* ProductGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178CF1D6E6E1800FF79CC /* ProductGroup.swift */; };
@@ -62,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D926E43F1DCBA5C7009D35A2 /* AddMoreItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMoreItemsViewController.swift; sourceTree = "<group>"; };
 		D94178CB1D6E6A7600FF79CC /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D94178CF1D6E6E1800FF79CC /* ProductGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductGroup.swift; sourceTree = "<group>"; };
 		D94178D21D6E6E3A00FF79CC /* Aisle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aisle.swift; sourceTree = "<group>"; };
@@ -155,6 +158,7 @@
 				D99DF2141D889DF0000EF6EF /* StoreSelectionViewController.swift */,
 				D9EA10231DA58C9C00296367 /* ProdGrpCollectionViewController.swift */,
 				D97BC8261DA8236B00C7AD82 /* ItemCollectionViewController.swift */,
+				D926E43F1DCBA5C7009D35A2 /* AddMoreItemsViewController.swift */,
 				D96091D81DC934FA0071DE84 /* ItemListViewController.swift */,
 				D94178CE1D6E6DCD00FF79CC /* AisleAide System Objects */,
 				D9AB11A91D6E18D5004A1875 /* Assets.xcassets */,
@@ -291,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D926E4401DCBA5C7009D35A2 /* AddMoreItemsViewController.swift in Sources */,
 				D94178CC1D6E6A7600FF79CC /* Item.swift in Sources */,
 				D99DF2121D889C7B000EF6EF /* MenuViewController.swift in Sources */,
 				D9AB11A01D6E18D5004A1875 /* AppDelegate.swift in Sources */,
@@ -320,6 +325,7 @@
 				D94178D11D6E6E1800FF79CC /* ProductGroup.swift in Sources */,
 				D99DF2131D889C7B000EF6EF /* MenuViewController.swift in Sources */,
 				D99DF2161D889DF0000EF6EF /* StoreSelectionViewController.swift in Sources */,
+				D926E4411DCBA5C7009D35A2 /* AddMoreItemsViewController.swift in Sources */,
 				D9EA10251DA58C9C00296367 /* ProdGrpCollectionViewController.swift in Sources */,
 				D99DF2041D874E99000EF6EF /* ItemList.swift in Sources */,
 				D9AB11B81D6E18D5004A1875 /* AisleAideDemoTests.swift in Sources */,
