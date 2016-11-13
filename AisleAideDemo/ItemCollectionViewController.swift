@@ -95,7 +95,7 @@ class ItemCollectionViewController: AisleAideSetupViewController, UICollectionVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MoreItemsSegue" {
             let vc = segue.destination as! AddMoreItemsViewController
-            vc.lyle = self.lyle
+            vc.lyle = Lyle.defaultHelper
         }
     }
     

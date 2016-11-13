@@ -440,13 +440,13 @@
                                                     <exclude reference="2co-V2-kKb"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="IuM-82-uBs"/>
-                                                    <exclude reference="iv1-dQ-HEq"/>
-                                                    <exclude reference="mx8-4g-soO"/>
                                                     <exclude reference="9sN-fq-9yJ"/>
                                                     <exclude reference="ei9-NH-og5"/>
                                                     <exclude reference="kMA-Gp-aOh"/>
                                                     <exclude reference="oRU-2O-bwD"/>
+                                                    <exclude reference="IuM-82-uBs"/>
+                                                    <exclude reference="iv1-dQ-HEq"/>
+                                                    <exclude reference="mx8-4g-soO"/>
                                                     <exclude reference="7ee-8F-0lW"/>
                                                     <exclude reference="Hrp-oQ-7dO"/>
                                                     <exclude reference="M0b-IP-vMw"/>
@@ -464,13 +464,13 @@
                                                     <include reference="2co-V2-kKb"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="IuM-82-uBs"/>
-                                                    <include reference="iv1-dQ-HEq"/>
-                                                    <include reference="mx8-4g-soO"/>
                                                     <include reference="9sN-fq-9yJ"/>
                                                     <include reference="ei9-NH-og5"/>
                                                     <exclude reference="kMA-Gp-aOh"/>
                                                     <include reference="oRU-2O-bwD"/>
+                                                    <exclude reference="IuM-82-uBs"/>
+                                                    <include reference="iv1-dQ-HEq"/>
+                                                    <include reference="mx8-4g-soO"/>
                                                     <include reference="7ee-8F-0lW"/>
                                                     <include reference="Hrp-oQ-7dO"/>
                                                     <include reference="M0b-IP-vMw"/>
@@ -498,7 +498,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.08235294118" green="0.45882352939999999" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vbg-I1-up2" firstAttribute="top" secondItem="18n-pN-g36" secondAttribute="top" id="BP5-2h-Fv0">
                                 <variation key="heightClass=regular-widthClass=compact" constant="64"/>
@@ -518,13 +518,13 @@
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="iNo-Cz-rbD"/>
+                                <exclude reference="BP5-2h-Fv0"/>
+                                <exclude reference="FmW-kd-aIC"/>
+                                <exclude reference="exr-yy-r7s"/>
                                 <exclude reference="Not-tA-es1"/>
                                 <exclude reference="afu-6P-QhR"/>
                                 <exclude reference="ltL-Bb-gZC"/>
                                 <exclude reference="zDO-Cw-CnQ"/>
-                                <exclude reference="BP5-2h-Fv0"/>
-                                <exclude reference="FmW-kd-aIC"/>
-                                <exclude reference="exr-yy-r7s"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -534,13 +534,13 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="iNo-Cz-rbD"/>
+                                <include reference="BP5-2h-Fv0"/>
+                                <include reference="FmW-kd-aIC"/>
+                                <include reference="exr-yy-r7s"/>
                                 <include reference="Not-tA-es1"/>
                                 <include reference="afu-6P-QhR"/>
                                 <include reference="ltL-Bb-gZC"/>
                                 <include reference="zDO-Cw-CnQ"/>
-                                <include reference="BP5-2h-Fv0"/>
-                                <include reference="FmW-kd-aIC"/>
-                                <include reference="exr-yy-r7s"/>
                             </mask>
                         </variation>
                     </view>
@@ -1038,11 +1038,11 @@
                                 <rect key="frame" x="0.0" y="160" width="375" height="499"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="Htx-0r-GOt">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemTableCell" rowHeight="68" id="Htx-0r-GOt" customClass="ItemTableCell" customModule="AisleAideDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="68"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Htx-0r-GOt" id="Ig6-e0-C4X">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkO-AG-ofy">
@@ -1073,22 +1073,50 @@
                                         <constraints>
                                             <constraint firstItem="EkO-AG-ofy" firstAttribute="centerY" secondItem="Htx-0r-GOt" secondAttribute="centerY" id="OXU-Jq-b54"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="aisleLabel" destination="pHe-2h-Sfb" id="2ds-Ys-oU8"/>
+                                            <outlet property="nameLabel" destination="EkO-AG-ofy" id="DN7-Xu-VF5"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="SSm-b5-pMf" id="s64-0g-4R1"/>
+                                    <outlet property="delegate" destination="SSm-b5-pMf" id="nIU-BW-K6P"/>
+                                </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Items: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmS-aV-q9t">
+                                <rect key="frame" x="16" y="108" width="218" height="36"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Aisle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dz-Oj-SWp">
+                                <rect key="frame" x="313" y="108" width="52" height="36"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.082352941176470587" green="0.45882352941176469" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="k7z-yY-ZgJ" firstAttribute="leading" secondItem="OnN-We-7RP" secondAttribute="leading" id="9qa-G4-9OI"/>
+                            <constraint firstItem="JmS-aV-q9t" firstAttribute="centerY" secondItem="8dz-Oj-SWp" secondAttribute="centerY" id="BvE-8c-jUO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8dz-Oj-SWp" secondAttribute="trailing" constant="4" id="Nh5-wM-cBk"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="JmS-aV-q9t" secondAttribute="leading" constant="4" id="Wwv-2K-QjO"/>
                             <constraint firstItem="k7z-yY-ZgJ" firstAttribute="top" secondItem="B3c-ht-hlN" secondAttribute="bottom" constant="96" id="nJv-aw-t5U"/>
+                            <constraint firstItem="k7z-yY-ZgJ" firstAttribute="top" secondItem="8dz-Oj-SWp" secondAttribute="bottom" constant="16" id="qvO-BY-uht"/>
                             <constraint firstItem="dPo-qu-iis" firstAttribute="top" secondItem="k7z-yY-ZgJ" secondAttribute="bottom" constant="8" id="rV1-il-5S1"/>
                             <constraint firstAttribute="trailing" secondItem="k7z-yY-ZgJ" secondAttribute="trailing" id="tEc-uE-sBQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="itemsCountLabel" destination="JmS-aV-q9t" id="uaC-AR-ueZ"/>
+                        <outlet property="tableView" destination="k7z-yY-ZgJ" id="zCE-Sh-A0Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugW-0S-rcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7164" y="1073"/>
+            <point key="canvasLocation" x="7164" y="1072.7136431784108"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hDQ-Wf-u68">

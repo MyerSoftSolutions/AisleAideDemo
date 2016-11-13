@@ -47,7 +47,7 @@ class Store: NSObject {
             self.aisleList.aisleArray.append(aisle)
             i += 1
         }
-        print(self.aisleList.aisleArray)
+        print(self.aisleList.aisleArray.count)
         self.numOfAisles = self.aisleList.aisleArray.count
     }
     

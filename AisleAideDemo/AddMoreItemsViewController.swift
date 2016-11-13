@@ -41,6 +41,8 @@ class AddMoreItemsViewController: AisleAideSetupViewController {
         if segue.identifier == "MoreItemsSegue" {
             let vc = segue.destination as! ItemListViewController
             vc.lyle = self.lyle
+            
+
         }
     }
 

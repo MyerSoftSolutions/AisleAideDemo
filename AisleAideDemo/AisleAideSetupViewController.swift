@@ -20,7 +20,7 @@ class AisleAideSetupViewController: UIViewController {
     }
 
     func createCustomBackButton(_ btnTitle: String) {
-        self.backBtn = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.done, target: self, action: #selector(AisleAideSetupViewController.navigationBackButtonClicked))
+        self.backBtn = UIBarButtonItem(title: btnTitle, style: UIBarButtonItemStyle.done, target: self, action: #selector(AisleAideSetupViewController.navigationBackButtonClicked))
         self.navigationItem.leftBarButtonItem = self.backBtn
     }
     
