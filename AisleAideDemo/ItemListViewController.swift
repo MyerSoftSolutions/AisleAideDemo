@@ -12,6 +12,7 @@ class ItemTableCell : UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var aisleLabel: UILabel!
+    @IBOutlet weak var separatorView: UIView!
 }
 
 class ItemListViewController: AisleAideSetupViewController, UITableViewDataSource, UITableViewDelegate {
@@ -28,7 +29,9 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
         self.createCustomBackButton("+Add Item")
         self.title = "My ItemList"
         
-        self.itemsCountLabel.text = String(format:"Items: %d", self.itemArray.count)
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 68.0
+
         
         // Do any additional setup after loading the view.
     }
@@ -37,6 +40,9 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
         super.viewWillAppear(animated)
         print((Lyle.defaultHelper.currentItemList?.itemArray.count)!)
         itemArray = (Lyle.defaultHelper.currentItemList?.itemArray)!
+        self.itemsCountLabel.text = String(format:"Items: %d", self.itemArray.count)
+
+        tableView.reloadData()
 
     }
     
@@ -61,4 +67,11 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
         return cell
     }
 
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 68.0
+    }
 }
