@@ -15,6 +15,70 @@ class ItemTableCell : UITableViewCell {
     @IBOutlet weak var separatorView: UIView!
 }
 
+class SuggestionsCollectionCell : UICollectionViewCell {
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var aisleLabel: UILabel!
+
+}
+
+class SuggestionsTableCell : UITableViewCell, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    var itemArray : [Item] = []
+    
+    @IBOutlet weak var collectionViewHeightCon: NSLayoutConstraint!
+    override func prepareForReuse() {
+        self.itemArray = []
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
+        
+    }
+
+    
+    // MARK: UICollectionViewDataSource
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+         return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.itemArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (self.collectionView.frame.width/2.75 - 5), height: self.collectionViewHeightCon.constant) // The size of one cell
+        
+    }
+
+    
+    //Use for interspacing
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 5.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout
+        collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(10, 20, 10, 20) // margin between cells
+    }
+
+    
+}
+
 class ItemListViewController: AisleAideSetupViewController, UITableViewDataSource, UITableViewDelegate {
     var itemArray : [Item] = []
     var rowPressed = false
@@ -67,6 +131,8 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
         return cell
     }
 
+    
+    
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
