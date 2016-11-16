@@ -60,21 +60,21 @@ class AisleList: NSObject {
         return isInArray
     }
     
-    func alsoOnThisAisle(_ aisle: Aisle, item: Item, itemArray: [Item])->[Item]{
+    func alsoOnThisAisle(item: Item, itemArray: [Item])->[Item]{
         var items : [Item] = []
         
       //  for var k in 0; k < 3; k += 1
         while items.count <= 2 {
-            let randomNum = Int(arc4random_uniform(UInt32(aisle.productGroups.count)))
-            let pGroup = aisle.productGroups[randomNum]
+            let randomNum = Int(arc4random_uniform(UInt32((item.aisle?.productGroups.count)!)))
+            let pGroup = item.aisle?.productGroups[randomNum]
             
-            let randomNum2 = Int(arc4random_uniform(UInt32(pGroup.items.count)))
-            let suggestedItem = pGroup.items[randomNum2]
+            let randomNum2 = Int(arc4random_uniform(UInt32((pGroup?.items.count)!)))
+            let suggestedItem = pGroup?.items[randomNum2]
             
-            if suggestedItem == item || self.isItemInArray(items, suggestedItem: suggestedItem) || self.isItemInArray(itemArray, suggestedItem: suggestedItem) {
+            if suggestedItem == item || self.isItemInArray(items, suggestedItem: suggestedItem!) || self.isItemInArray(itemArray, suggestedItem: suggestedItem!) {
                 continue
             } else {
-                items.append(suggestedItem)
+                items.append(suggestedItem!)
             }
             
         }

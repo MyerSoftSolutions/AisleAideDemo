@@ -24,6 +24,7 @@ class SuggestionsCollectionCell : UICollectionViewCell {
 class SuggestionsTableCell : UITableViewCell, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    var parentController : ItemListViewController?
     var itemArray : [Item] = []
     
     @IBOutlet weak var collectionViewHeightCon: NSLayoutConstraint!
@@ -35,7 +36,9 @@ class SuggestionsTableCell : UITableViewCell, UICollectionViewDelegateFlowLayout
         
     }
 
-    
+//    override func awakeFromNib() {
+//        <#code#>
+//    }
     // MARK: UICollectionViewDataSource
     func numberOfSections(in collectionView: UICollectionView) -> Int {
          return 1
@@ -46,11 +49,27 @@ class SuggestionsTableCell : UITableViewCell, UICollectionViewDelegateFlowLayout
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell : SuggestionsCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SuggestionsCollectionCell", for: indexPath) as! SuggestionsCollectionCell
+        
+        
+        let item = self.itemArray[indexPath.row]
+        cell.nameLabel.text = item.name!
+        cell.aisleLabel.text = "\(item.aisleNum!)"
+        
+        return cell
+
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
+        let item = self.itemArray[indexPath.row]
+        
+        Lyle.defaultHelper.addSelectedItem(item)
+        self.parentController?.itemArray = (Lyle.defaultHelper.currentItemList?.itemArray)!
+        self.parentController?.rowPressed = false
+        self.parentController?.suggestedItemArray?.removeAll(keepingCapacity: true)
+        self.parentController?.suggestedCellIndexPath = nil
+        self.parentController?.tableView.reloadData()
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -84,7 +103,8 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
     var rowPressed = false
     var selectedRow : Int?
     var alsoOnThisArray, oneAisleOverArray : [Item]?
-    var indexPaths : [AnyObject]?
+    var suggestedCellIndexPath : IndexPath?
+    var suggestedItemArray : [Item]?
     
     @IBOutlet weak var itemsCountLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
@@ -117,27 +137,139 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.itemArray.count
+        if rowPressed {
+            return self.itemArray.count + 1
+        } else {
+            return self.itemArray.count
+        }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableCell", for: indexPath) as! ItemTableCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let item = self.itemArray[indexPath.row]
-        cell.nameLabel.text = item.name
-        cell.aisleLabel.text = "\(item.aisleNum!)"
-        print(cell.aisleLabel.text!)
+        if suggestedCellIndexPath != nil {
+            if indexPath != suggestedCellIndexPath {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableCell", for: indexPath) as! ItemTableCell
+                
+                let item = self.itemArray[indexPath.row]
+                cell.nameLabel.text = item.name
+                cell.aisleLabel.text = "\(item.aisleNum!)"
+                print(cell.aisleLabel.text!)
+                
+                return cell
+
+
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "SuggestionsTableCell", for: indexPath) as! SuggestionsTableCell
+                cell.parentController = self
+                cell.itemArray = self.suggestedItemArray!
+                return cell
+
+            }
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableCell", for: indexPath) as! ItemTableCell
+            
+            let item = self.itemArray[indexPath.row]
+            cell.nameLabel.text = item.name
+            cell.aisleLabel.text = "\(item.aisleNum!)"
+            print(cell.aisleLabel.text!)
+            
+            return cell
+
+        }
         
-        return cell
     }
 
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if !rowPressed {
+            rowPressed = true
+            selectedRow = indexPath.row
+            let section = indexPath.section
+            suggestedCellIndexPath = IndexPath(row: selectedRow! + 1, section: section)
+            
+            
+            //Build SuggestionItemArray of 6 Items
+            if suggestedItemArray != nil {
+                suggestedItemArray?.removeAll(keepingCapacity: true)
+            } else {
+                suggestedItemArray = []
+                suggestedItemArray?.reserveCapacity(6)
+                
+                let item = self.itemArray[indexPath.row]
+
+                alsoOnThisArray = Lyle.defaultHelper.currentStore?.aisleList.alsoOnThisAisle(item: item, itemArray: (Lyle.defaultHelper.currentItemList?.itemArray)!)
+                for item in alsoOnThisArray! {
+                    suggestedItemArray?.append(item)
+                }
+                
+                oneAisleOverArray = Lyle.defaultHelper.currentStore?.aisleList.oneAisleOver(item.aisle!, userItemArray: (Lyle.defaultHelper.currentItemList?.itemArray)! )
+                for item in oneAisleOverArray! {
+                    suggestedItemArray?.append(item)
+                }
+            }
+            
+            
+            tableView.beginUpdates()
+            tableView.insertRows(at: [suggestedCellIndexPath!], with: UITableViewRowAnimation.top)
+            tableView.endUpdates()
+            
+            tableView.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: true)
+        } else {
+            
+            if indexPath.row == selectedRow {
+                
+                tableView.beginUpdates()
+                if suggestedCellIndexPath != nil{
+                    rowPressed = false
+                    selectedRow = nil
+                    tableView.deleteRows(at: [suggestedCellIndexPath!], with: UITableViewRowAnimation.automatic)
+                }
+                tableView.endUpdates()
+                
+                tableView.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: true)
+
+            } else {
+                tableView.beginUpdates()
+                if suggestedCellIndexPath != nil{
+                    tableView.deleteRows(at: [suggestedCellIndexPath!], with: UITableViewRowAnimation.automatic)
+                }
+                tableView.endUpdates()
+                
+                selectedRow = indexPath.row
+                let section = indexPath.section
+                suggestedCellIndexPath = IndexPath(row: selectedRow! + 1, section: section)
+                
+                //Build SuggestionItemArray of 6 Items
+                if suggestedItemArray != nil {
+                    suggestedItemArray?.removeAll(keepingCapacity: true)
+                } else {
+                    suggestedItemArray = []
+                    suggestedItemArray?.reserveCapacity(6)
+                    
+                    //                for i in (0..<suggestedItemArray?.capacity){
+                    //
+                    //                }
+                }
+
+                
+                tableView.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: true)
+            }
+        }
+    }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 68.0
+        if suggestedCellIndexPath != nil {
+            if indexPath == suggestedCellIndexPath {
+                return 80.0
+            } else {
+                return 68.0
+            }
+        } else {
+            return 68.0
+
+        }
     }
 }
