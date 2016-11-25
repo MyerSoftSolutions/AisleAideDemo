@@ -65,6 +65,9 @@ class SuggestionsTableCell : UITableViewCell, UICollectionViewDelegateFlowLayout
         
         Lyle.defaultHelper.addSelectedItem(item)
         self.parentController?.itemArray = (Lyle.defaultHelper.currentItemList?.itemArray)!
+        self.parentController?.itemsCountLabel.text = String(format:"Items: %d", (self.parentController?.itemArray.count)!)
+        self.parentController?.itemArray.sort(by: {$0.aisle!.aisleNumber! < $1.aisle!.aisleNumber!})
+
         self.parentController?.rowPressed = false
         self.parentController?.suggestedItemArray?.removeAll(keepingCapacity: true)
         self.parentController?.suggestedCellIndexPath = nil
@@ -124,6 +127,7 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
         super.viewWillAppear(animated)
         print((Lyle.defaultHelper.currentItemList?.itemArray.count)!)
         itemArray = (Lyle.defaultHelper.currentItemList?.itemArray)!
+        itemArray.sort(by: {$0.aisle!.aisleNumber! < $1.aisle!.aisleNumber!})
         self.itemsCountLabel.text = String(format:"Items: %d", self.itemArray.count)
 
         tableView.reloadData()
@@ -190,6 +194,19 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
             //Build SuggestionItemArray of 6 Items
             if suggestedItemArray != nil {
                 suggestedItemArray?.removeAll(keepingCapacity: true)
+                
+                let item = self.itemArray[indexPath.row]
+                
+                alsoOnThisArray = Lyle.defaultHelper.currentStore?.aisleList.alsoOnThisAisle(item: item, itemArray: (Lyle.defaultHelper.currentItemList?.itemArray)!)
+                for item in alsoOnThisArray! {
+                    suggestedItemArray?.append(item)
+                }
+                
+                oneAisleOverArray = Lyle.defaultHelper.currentStore?.aisleList.oneAisleOver(item.aisle!, userItemArray: (Lyle.defaultHelper.currentItemList?.itemArray)! )
+                for item in oneAisleOverArray! {
+                    suggestedItemArray?.append(item)
+                }
+
             } else {
                 suggestedItemArray = []
                 suggestedItemArray?.reserveCapacity(6)

@@ -1116,13 +1116,13 @@
                                                         <constraint firstAttribute="height" constant="1" id="N9I-ZB-SkO"/>
                                                     </constraints>
                                                 </view>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hu7-d8-U8I">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hu7-d8-U8I">
                                                     <rect key="frame" x="0.0" y="1" width="375" height="87"/>
                                                     <color key="backgroundColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="87" id="n5j-2Y-qik"/>
                                                     </constraints>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lKf-mB-GIQ">
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lKf-mB-GIQ">
                                                         <size key="itemSize" width="126" height="83"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -1130,7 +1130,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SuggestionsCollectionCell" id="Lyf-kf-tzf" customClass="SuggestionsCollectionCell" customModule="AisleAideDemo" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="126" height="83"/>
+                                                            <rect key="frame" x="0.0" y="2" width="126" height="83"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="83"/>
