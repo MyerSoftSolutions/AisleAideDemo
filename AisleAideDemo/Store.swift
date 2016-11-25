@@ -13,8 +13,8 @@ class Store: NSObject {
     var address : String?
     var numOfAisles : Int?
     
-    var aisleList : AisleList = AisleList()
-    static let sharedStore = Store()
+    var aisleList = AisleList()
+//    var store = Store()
 
     func createAisleList(_ storeName: String) {
         let path : String = Bundle.main.path(forResource: storeName, ofType: "plist")!

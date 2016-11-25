@@ -88,7 +88,7 @@ class StoreSelectionViewController: AisleAideSetupViewController, UITableViewDel
             vc.lyle = Lyle.defaultHelper
             vc.lyle?.currentItemList = ItemList()
 
-            vc.lyle?.currentStore = Store.sharedStore
+            vc.lyle?.currentStore = Store()
             vc.lyle?.currentStore?.createAisleList(storeString)
             vc.prodGrpArray = (vc.lyle?.currentStore?.aisleList.getAllProdGrps())!
             print(vc.prodGrpArray.count)

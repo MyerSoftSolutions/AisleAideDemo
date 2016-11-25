@@ -30,8 +30,8 @@ class ProdGrpCollectionViewController: AisleAideSetupViewController, UICollectio
     }
 
     override func navigationBackButtonClicked(_ sender: UIBarButtonItem) {
-        self.lyle?.currentStore = nil
-        self.lyle = nil
+//        self.lyle?.currentStore = nil
+//        self.lyle = nil
         self.navigationController?.popViewController(animated: true)
     }
     
