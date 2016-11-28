@@ -111,6 +111,12 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
     
     @IBOutlet weak var itemsCountLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var salesBtn: UIButton!
+    @IBOutlet weak var couponBtn: UIButton!
+    @IBOutlet weak var exploreBtn: UIButton!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.createCustomBackButton("+Add Item")
@@ -119,7 +125,18 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 68.0
 
+        salesBtn.layer.borderColor = UIColor(colorLiteralRed:  241.0, green: 255.0, blue: 145.0, alpha: 1.0).cgColor
+        salesBtn.layer.borderWidth = 1.0
+        salesBtn.layer.cornerRadius = 14.0
         
+        couponBtn.layer.borderColor = UIColor(colorLiteralRed:  241.0, green: 255.0, blue: 145.0, alpha: 1.0).cgColor
+        couponBtn.layer.borderWidth = 1.0
+        couponBtn.layer.cornerRadius = 14.0
+        
+        
+        exploreBtn.layer.borderColor = UIColor(colorLiteralRed:  241.0, green: 255.0, blue: 145.0, alpha: 1.0).cgColor
+        exploreBtn.layer.borderWidth = 1.0
+        exploreBtn.layer.cornerRadius = 14.0
         // Do any additional setup after loading the view.
     }
 
@@ -142,6 +159,20 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
         self.itemsCountLabel.text = String(format:"Items: %d", self.itemArray.count)
 
         tableView.reloadData()
+
+    }
+    
+    @IBAction func topBtnPressed(_ sender: UIButton) {
+        if sender.tag == 10 {
+            //Sales Btn Pressed
+            
+        } else if sender.tag == 20 {
+            //Coupons Btn Pressed
+            
+        } else {
+            //Explore Btn Pressed
+            
+        }
 
     }
     

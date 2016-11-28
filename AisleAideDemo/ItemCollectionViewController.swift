@@ -18,16 +18,43 @@ class ItemCollectionViewController: AisleAideSetupViewController, UICollectionVi
     var selectedItem : Item?
     var itemAlreadyExists : Bool = false
     
+    @IBOutlet weak var salesBtn: UIButton!
+    @IBOutlet weak var couponBtn: UIButton!
+    @IBOutlet weak var exploreBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(itemArray)
-
-        // Do any additional setup after loading the view.
+        salesBtn.layer.borderColor = UIColor(colorLiteralRed:  241.0, green: 255.0, blue: 145.0, alpha: 1.0).cgColor
+        salesBtn.layer.borderWidth = 1.0
+        salesBtn.layer.cornerRadius = 14.0
+        
+        couponBtn.layer.borderColor = UIColor(colorLiteralRed:  241.0, green: 255.0, blue: 145.0, alpha: 1.0).cgColor
+        couponBtn.layer.borderWidth = 1.0
+        couponBtn.layer.cornerRadius = 14.0
+        
+        
+        exploreBtn.layer.borderColor = UIColor(colorLiteralRed:  241.0, green: 255.0, blue: 145.0, alpha: 1.0).cgColor
+        exploreBtn.layer.borderWidth = 1.0
+        exploreBtn.layer.cornerRadius = 14.0        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func topBtnPressed(_ sender: UIButton) {
+        if sender.tag == 10 {
+            //Sales Btn Pressed
+            
+        } else if sender.tag == 20 {
+            //Coupons Btn Pressed
+            
+        } else {
+            //Explore Btn Pressed
+            
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

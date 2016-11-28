@@ -572,7 +572,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uvS-t4-qYb">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uvS-t4-qYb">
                                 <rect key="frame" x="0.0" y="137" width="375" height="530"/>
                                 <color key="backgroundColor" red="0.082352941176470587" green="0.45882352941176469" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LEg-fs-hkK">
@@ -717,7 +717,7 @@
                                     <outlet property="delegate" destination="r5V-uf-fbm" id="vWd-ot-vcN"/>
                                 </connections>
                             </collectionView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NEI-gp-Afz">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEI-gp-Afz">
                                 <rect key="frame" x="0.0" y="64" width="375" height="73"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="V4c-Em-82q">
@@ -764,6 +764,7 @@
                                     <constraint firstItem="V4c-Em-82q" firstAttribute="centerY" secondItem="NEI-gp-Afz" secondAttribute="centerY" id="ECq-tO-UdE"/>
                                     <constraint firstItem="V4c-Em-82q" firstAttribute="leading" secondItem="NEI-gp-Afz" secondAttribute="leading" constant="40" id="FnZ-2U-DMe"/>
                                     <constraint firstAttribute="trailing" secondItem="V4c-Em-82q" secondAttribute="trailing" constant="40" id="aYM-Iu-rZj"/>
+                                    <constraint firstAttribute="height" constant="73" id="ohi-XN-USv"/>
                                     <constraint firstItem="V4c-Em-82q" firstAttribute="centerX" secondItem="NEI-gp-Afz" secondAttribute="centerX" id="zdu-dK-Y6i"/>
                                 </constraints>
                             </view>
@@ -774,7 +775,6 @@
                             <constraint firstItem="zkB-Fl-6Ty" firstAttribute="top" secondItem="uvS-t4-qYb" secondAttribute="bottom" id="Hty-Ts-P6d"/>
                             <constraint firstAttribute="trailing" secondItem="uvS-t4-qYb" secondAttribute="trailing" id="OQj-z7-sJE"/>
                             <constraint firstItem="NEI-gp-Afz" firstAttribute="leading" secondItem="EdE-8X-Q2F" secondAttribute="leading" id="cs9-oS-lRy"/>
-                            <constraint firstItem="uvS-t4-qYb" firstAttribute="top" secondItem="h2l-1k-3vZ" secondAttribute="bottom" constant="116" id="ctr-Xu-0z1"/>
                             <constraint firstItem="uvS-t4-qYb" firstAttribute="leading" secondItem="EdE-8X-Q2F" secondAttribute="leading" id="eOg-ov-0gg"/>
                             <constraint firstAttribute="trailing" secondItem="NEI-gp-Afz" secondAttribute="trailing" id="zZs-Ft-TmW"/>
                         </constraints>
@@ -784,7 +784,6 @@
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="OQj-z7-sJE"/>
-                                <exclude reference="ctr-Xu-0z1"/>
                                 <exclude reference="eOg-ov-0gg"/>
                                 <exclude reference="Hty-Ts-P6d"/>
                             </mask>
@@ -795,7 +794,6 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="OQj-z7-sJE"/>
-                                <include reference="ctr-Xu-0z1"/>
                                 <include reference="eOg-ov-0gg"/>
                                 <include reference="Hty-Ts-P6d"/>
                             </mask>
@@ -828,8 +826,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d92-Ka-7Pt">
+                                <rect key="frame" x="0.0" y="72" width="375" height="73"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="70D-u5-kjn">
+                                        <rect key="frame" x="39" y="21" width="295" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnh-k9-cpW">
+                                                <rect key="frame" x="0.0" y="5" width="90.5" height="30"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                                <state key="normal" title="Sales">
+                                                    <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="topBtnPressed:" destination="zbR-n1-OcI" eventType="touchUpInside" id="EVm-Zu-eou"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubd-ss-aXB">
+                                                <rect key="frame" x="102.5" y="5" width="90" height="30"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                                <state key="normal" title="Coupons">
+                                                    <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="topBtnPressed:" destination="zbR-n1-OcI" eventType="touchUpInside" id="GD9-Y4-Lvj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vR-jc-Aq4">
+                                                <rect key="frame" x="204.5" y="5" width="90.5" height="30"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                                <state key="normal" title="Explore">
+                                                    <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="topBtnPressed:" destination="zbR-n1-OcI" eventType="touchUpInside" id="Pdq-jU-sPE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="zi2-QK-T5u"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.08235294118" green="0.45882352939999999" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="70D-u5-kjn" secondAttribute="trailing" constant="40" id="1uk-gg-JPC"/>
+                                    <constraint firstAttribute="height" constant="73" id="29h-Lh-diX"/>
+                                    <constraint firstItem="70D-u5-kjn" firstAttribute="centerX" secondItem="d92-Ka-7Pt" secondAttribute="centerX" id="ZTY-k9-yh5"/>
+                                    <constraint firstItem="70D-u5-kjn" firstAttribute="centerY" secondItem="d92-Ka-7Pt" secondAttribute="centerY" id="dk9-iy-kDV"/>
+                                    <constraint firstItem="70D-u5-kjn" firstAttribute="leading" secondItem="d92-Ka-7Pt" secondAttribute="leading" constant="40" id="jHP-RU-HgY"/>
+                                </constraints>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Cd-Ak-gOp">
-                                <rect key="frame" x="0.0" y="141" width="375" height="526"/>
+                                <rect key="frame" x="0.0" y="143" width="375" height="524"/>
                                 <color key="backgroundColor" red="0.082352941176470587" green="0.45882352941176469" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vxn-Pz-cTV">
                                     <size key="itemSize" width="179" height="135"/>
@@ -975,35 +1024,29 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="3Cd-Ak-gOp" secondAttribute="trailing" id="LJs-fi-Zew"/>
-                            <constraint firstItem="3jp-UY-bCD" firstAttribute="top" secondItem="3Cd-Ak-gOp" secondAttribute="bottom" id="av7-jr-Df1"/>
-                            <constraint firstItem="3Cd-Ak-gOp" firstAttribute="top" secondItem="K1T-zM-pyJ" secondAttribute="bottom" constant="116" id="hbX-op-JRq"/>
-                            <constraint firstItem="3Cd-Ak-gOp" firstAttribute="leading" secondItem="H3F-yY-7Qk" secondAttribute="leading" id="kOS-7a-LpF"/>
+                            <constraint firstAttribute="trailing" secondItem="d92-Ka-7Pt" secondAttribute="trailing" id="NCY-DA-zw5"/>
+                            <constraint firstItem="3Cd-Ak-gOp" firstAttribute="top" secondItem="d92-Ka-7Pt" secondAttribute="bottom" id="Uvz-vZ-brg"/>
+                            <constraint firstItem="3jp-UY-bCD" firstAttribute="top" secondItem="3Cd-Ak-gOp" secondAttribute="bottom" id="VP2-bY-mpk"/>
+                            <constraint firstAttribute="trailing" secondItem="3Cd-Ak-gOp" secondAttribute="trailing" id="VgH-OS-yMZ"/>
+                            <constraint firstItem="3Cd-Ak-gOp" firstAttribute="leading" secondItem="H3F-yY-7Qk" secondAttribute="leading" id="eAe-a9-hLK"/>
+                            <constraint firstItem="d92-Ka-7Pt" firstAttribute="top" secondItem="K1T-zM-pyJ" secondAttribute="bottom" id="geg-cC-uWZ"/>
+                            <constraint firstItem="d92-Ka-7Pt" firstAttribute="leading" secondItem="H3F-yY-7Qk" secondAttribute="leading" id="kpq-t6-IGV"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="3Cd-Ak-gOp"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="av7-jr-Df1"/>
-                                <exclude reference="LJs-fi-Zew"/>
-                                <exclude reference="hbX-op-JRq"/>
-                                <exclude reference="kOS-7a-LpF"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="3Cd-Ak-gOp"/>
                             </mask>
-                            <mask key="constraints">
-                                <include reference="av7-jr-Df1"/>
-                                <include reference="LJs-fi-Zew"/>
-                                <include reference="hbX-op-JRq"/>
-                                <include reference="kOS-7a-LpF"/>
-                            </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="couponBtn" destination="Ubd-ss-aXB" id="I5j-L1-2R0"/>
+                        <outlet property="exploreBtn" destination="8vR-jc-Aq4" id="76m-Gc-ARo"/>
+                        <outlet property="salesBtn" destination="Xnh-k9-cpW" id="SMT-04-kqR"/>
                         <segue destination="oa6-cg-sI9" kind="show" identifier="MoreItemsSegue" id="tRS-iX-aRx"/>
                     </connections>
                 </viewController>
@@ -1105,7 +1148,7 @@
                                 <color key="textColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PQX-JG-kra">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PQX-JG-kra">
                                 <rect key="frame" x="0.0" y="164" width="375" height="490"/>
                                 <color key="backgroundColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -1259,21 +1302,66 @@
                                     <outlet property="delegate" destination="SSm-b5-pMf" id="04I-09-3Yh"/>
                                 </connections>
                             </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="VAO-gb-IvC">
+                                <rect key="frame" x="88" y="85" width="263" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3S-g9-Vgf">
+                                        <rect key="frame" x="0.0" y="5" width="79.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                        <state key="normal" title="Sales">
+                                            <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="topBtnPressed:" destination="SSm-b5-pMf" eventType="touchUpInside" id="xTQ-mx-QoI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O45-fo-7FY">
+                                        <rect key="frame" x="91.5" y="5" width="80" height="30"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                        <state key="normal" title="Coupons">
+                                            <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="topBtnPressed:" destination="SSm-b5-pMf" eventType="touchUpInside" id="xjF-WZ-zWR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTN-Sd-kGS">
+                                        <rect key="frame" x="183.5" y="5" width="79.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                        <state key="normal" title="Explore">
+                                            <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="topBtnPressed:" destination="SSm-b5-pMf" eventType="touchUpInside" id="dlY-vs-sdt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="w68-QG-13V"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.082352941176470587" green="0.45882352941176469" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="8dz-Oj-SWp" firstAttribute="top" secondItem="B3c-ht-hlN" secondAttribute="bottom" constant="63" id="4w9-V0-g3v"/>
                             <constraint firstItem="JmS-aV-q9t" firstAttribute="centerY" secondItem="8dz-Oj-SWp" secondAttribute="centerY" id="BvE-8c-jUO"/>
                             <constraint firstItem="dPo-qu-iis" firstAttribute="top" secondItem="PQX-JG-kra" secondAttribute="bottom" constant="13" id="DJ2-mQ-ui9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VAO-gb-IvC" secondAttribute="trailing" constant="40" id="GKe-a0-g58"/>
+                            <constraint firstItem="VAO-gb-IvC" firstAttribute="top" secondItem="B3c-ht-hlN" secondAttribute="bottom" constant="21" id="Gwx-i8-7m4"/>
                             <constraint firstAttribute="trailing" secondItem="8dz-Oj-SWp" secondAttribute="trailing" constant="10" id="QFl-e5-yOn"/>
                             <constraint firstAttribute="leadingMargin" secondItem="JmS-aV-q9t" secondAttribute="leading" id="Wwv-2K-QjO"/>
+                            <constraint firstItem="PQX-JG-kra" firstAttribute="top" secondItem="VAO-gb-IvC" secondAttribute="bottom" constant="39" id="bUB-8G-PfW"/>
                             <constraint firstItem="PQX-JG-kra" firstAttribute="top" secondItem="8dz-Oj-SWp" secondAttribute="bottom" constant="1" id="dI7-Wb-wos"/>
+                            <constraint firstItem="VAO-gb-IvC" firstAttribute="leading" secondItem="OnN-We-7RP" secondAttribute="leadingMargin" constant="40" id="ddD-GG-3WK"/>
                             <constraint firstAttribute="trailing" secondItem="PQX-JG-kra" secondAttribute="trailing" id="l0C-Kc-WmP"/>
                             <constraint firstItem="PQX-JG-kra" firstAttribute="leading" secondItem="OnN-We-7RP" secondAttribute="leading" id="v0p-mm-bHF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="couponBtn" destination="O45-fo-7FY" id="C9M-QL-G7i"/>
+                        <outlet property="exploreBtn" destination="hTN-Sd-kGS" id="MKj-P3-6tk"/>
                         <outlet property="itemsCountLabel" destination="JmS-aV-q9t" id="uaC-AR-ueZ"/>
+                        <outlet property="salesBtn" destination="O3S-g9-Vgf" id="atS-CF-UGE"/>
                         <outlet property="tableView" destination="PQX-JG-kra" id="e7C-49-3Kx"/>
                     </connections>
                 </viewController>
