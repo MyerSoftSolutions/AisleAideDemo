@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ProdGrpCollectionCell : UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
@@ -18,14 +19,41 @@ class ProdGrpCollectionViewController: AisleAideSetupViewController, UICollectio
     
     var prodGrpArray : [ProductGroup] = []
     var storeString : String?
+    var listConstructed = false
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var salesBtn: UIButton!
+    @IBOutlet weak var couponBtn: UIButton!
+    @IBOutlet weak var exploreBtn: UIButton!
+    
+   @IBOutlet var topButtons : [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
-        self.createCustomBackButton("Select Store")
+        if !listConstructed {
+            self.createCustomBackButton("Select Store")
+        } else {
+            self.createCustomBackButton("My List")
+
+        }
         
+        
+        salesBtn.layer.borderColor = UIColor(colorLiteralRed:  241.0, green: 255.0, blue: 145.0, alpha: 1.0).cgColor
+        salesBtn.layer.borderWidth = 1.0
+        salesBtn.layer.cornerRadius = 14.0
+
+        couponBtn.layer.borderColor = UIColor(colorLiteralRed:  241.0, green: 255.0, blue: 145.0, alpha: 1.0).cgColor
+        couponBtn.layer.borderWidth = 1.0
+        couponBtn.layer.cornerRadius = 14.0
+
+
+        exploreBtn.layer.borderColor = UIColor(colorLiteralRed:  241.0, green: 255.0, blue: 145.0, alpha: 1.0).cgColor
+        exploreBtn.layer.borderWidth = 1.0
+        exploreBtn.layer.cornerRadius = 14.0
+
+
         // Do any additional setup after loading the view.
     }
 
@@ -34,7 +62,19 @@ class ProdGrpCollectionViewController: AisleAideSetupViewController, UICollectio
 //        self.lyle = nil
         self.navigationController?.popViewController(animated: true)
     }
-    
+
+    @IBAction func topBtnPressed(_ sender: UIButton) {
+        if sender.tag == 10 {
+        //Sales Btn Pressed
+            
+        } else if sender.tag == 20 {
+        //Coupons Btn Pressed
+            
+        } else {
+        //Explore Btn Pressed
+            
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

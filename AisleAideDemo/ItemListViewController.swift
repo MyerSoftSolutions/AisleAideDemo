@@ -123,6 +123,17 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
         // Do any additional setup after loading the view.
     }
 
+    override func navigationBackButtonClicked(_ sender: UIBarButtonItem) {
+        let prodGrpVC = self.storyboard?.instantiateViewController(withIdentifier: "ProdGrpCollectionViewController") as! ProdGrpCollectionViewController
+        prodGrpVC.lyle = Lyle.defaultHelper
+        prodGrpVC.prodGrpArray = (prodGrpVC.lyle?.currentStore?.aisleList.getAllProdGrps())!
+        prodGrpVC.listConstructed = true
+        
+        self.navigationController?.popToViewController((self.navigationController?.viewControllers[(self.navigationController?.viewControllers.count)! - 1])!, animated: true)
+        self.navigationController?.pushViewController(prodGrpVC, animated: true)
+        
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print((Lyle.defaultHelper.currentItemList?.itemArray.count)!)
@@ -248,6 +259,7 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
                 tableView.beginUpdates()
                 if suggestedCellIndexPath != nil{
                     tableView.deleteRows(at: [suggestedCellIndexPath!], with: UITableViewRowAnimation.automatic)
+                    tableView.reloadData()
                 }
                 tableView.endUpdates()
                 

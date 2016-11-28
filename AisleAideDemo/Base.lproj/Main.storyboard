@@ -314,7 +314,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="114"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M24-vv-fVU" id="dIg-xN-CtE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiC-SA-DYH">
@@ -337,20 +337,20 @@
                                                     </variation>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mn1-6W-Rl0">
-                                                    <rect key="frame" x="65" y="43" width="266" height="62"/>
+                                                    <rect key="frame" x="65" y="43" width="266" height="61"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEX-Ud-CDm">
-                                                            <rect key="frame" x="0.0" y="0.0" width="266" height="15.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="266" height="15"/>
                                                             <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="14"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRU-ht-QMu">
-                                                            <rect key="frame" x="0.0" y="15.5" width="266" height="23"/>
+                                                            <rect key="frame" x="0.0" y="15" width="266" height="23"/>
                                                             <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="14"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQY-AP-HWl">
-                                                            <rect key="frame" x="0.0" y="38.5" width="266" height="23"/>
+                                                            <rect key="frame" x="0.0" y="38" width="266" height="23"/>
                                                             <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="14"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -573,7 +573,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uvS-t4-qYb">
-                                <rect key="frame" x="0.0" y="137" width="369" height="530"/>
+                                <rect key="frame" x="0.0" y="137" width="375" height="530"/>
                                 <color key="backgroundColor" red="0.082352941176470587" green="0.45882352941176469" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LEg-fs-hkK">
                                     <size key="itemSize" width="179" height="135"/>
@@ -717,23 +717,76 @@
                                     <outlet property="delegate" destination="r5V-uf-fbm" id="vWd-ot-vcN"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NEI-gp-Afz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="73"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="V4c-Em-82q">
+                                        <rect key="frame" x="39" y="21" width="295" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shf-Ov-gTF">
+                                                <rect key="frame" x="0.0" y="5" width="90.5" height="30"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                                <state key="normal" title="Sales">
+                                                    <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="topBtnPressed:" destination="r5V-uf-fbm" eventType="touchUpInside" id="bgA-qX-b58"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNY-h4-QrP">
+                                                <rect key="frame" x="102.5" y="5" width="90" height="30"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                                <state key="normal" title="Coupons">
+                                                    <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="topBtnPressed:" destination="r5V-uf-fbm" eventType="touchUpInside" id="YeQ-Fp-lZj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDW-Qd-g4b">
+                                                <rect key="frame" x="204.5" y="5" width="90.5" height="30"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                                <state key="normal" title="Explore">
+                                                    <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="topBtnPressed:" destination="r5V-uf-fbm" eventType="touchUpInside" id="D8b-xb-Zru"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="mX6-3g-N1x"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.08235294118" green="0.45882352939999999" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="V4c-Em-82q" firstAttribute="centerY" secondItem="NEI-gp-Afz" secondAttribute="centerY" id="ECq-tO-UdE"/>
+                                    <constraint firstItem="V4c-Em-82q" firstAttribute="leading" secondItem="NEI-gp-Afz" secondAttribute="leading" constant="40" id="FnZ-2U-DMe"/>
+                                    <constraint firstAttribute="trailing" secondItem="V4c-Em-82q" secondAttribute="trailing" constant="40" id="aYM-Iu-rZj"/>
+                                    <constraint firstItem="V4c-Em-82q" firstAttribute="centerX" secondItem="NEI-gp-Afz" secondAttribute="centerX" id="zdu-dK-Y6i"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="NEI-gp-Afz" firstAttribute="top" secondItem="h2l-1k-3vZ" secondAttribute="bottom" id="6Fy-oz-nX2"/>
+                            <constraint firstItem="uvS-t4-qYb" firstAttribute="top" secondItem="NEI-gp-Afz" secondAttribute="bottom" id="BcE-Qj-o14"/>
                             <constraint firstItem="zkB-Fl-6Ty" firstAttribute="top" secondItem="uvS-t4-qYb" secondAttribute="bottom" id="Hty-Ts-P6d"/>
                             <constraint firstAttribute="trailing" secondItem="uvS-t4-qYb" secondAttribute="trailing" id="OQj-z7-sJE"/>
+                            <constraint firstItem="NEI-gp-Afz" firstAttribute="leading" secondItem="EdE-8X-Q2F" secondAttribute="leading" id="cs9-oS-lRy"/>
                             <constraint firstItem="uvS-t4-qYb" firstAttribute="top" secondItem="h2l-1k-3vZ" secondAttribute="bottom" constant="116" id="ctr-Xu-0z1"/>
                             <constraint firstItem="uvS-t4-qYb" firstAttribute="leading" secondItem="EdE-8X-Q2F" secondAttribute="leading" id="eOg-ov-0gg"/>
+                            <constraint firstAttribute="trailing" secondItem="NEI-gp-Afz" secondAttribute="trailing" id="zZs-Ft-TmW"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="uvS-t4-qYb"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Hty-Ts-P6d"/>
                                 <exclude reference="OQj-z7-sJE"/>
                                 <exclude reference="ctr-Xu-0z1"/>
                                 <exclude reference="eOg-ov-0gg"/>
+                                <exclude reference="Hty-Ts-P6d"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -741,16 +794,22 @@
                                 <include reference="uvS-t4-qYb"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Hty-Ts-P6d"/>
                                 <include reference="OQj-z7-sJE"/>
                                 <include reference="ctr-Xu-0z1"/>
                                 <include reference="eOg-ov-0gg"/>
+                                <include reference="Hty-Ts-P6d"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Choose Product Group" id="iPH-kl-qMw"/>
                     <connections>
                         <outlet property="collectionView" destination="uvS-t4-qYb" id="iGg-Kz-xCt"/>
+                        <outlet property="couponBtn" destination="vNY-h4-QrP" id="Qf4-IX-agm"/>
+                        <outlet property="exploreBtn" destination="EDW-Qd-g4b" id="3ns-TO-N2S"/>
+                        <outlet property="salesBtn" destination="shf-Ov-gTF" id="yo1-g2-CPr"/>
+                        <outletCollection property="topButtons" destination="shf-Ov-gTF" collectionClass="NSMutableArray" id="sDX-Ud-kgK"/>
+                        <outletCollection property="topButtons" destination="vNY-h4-QrP" collectionClass="NSMutableArray" id="7eP-cx-Hoo"/>
+                        <outletCollection property="topButtons" destination="EDW-Qd-g4b" collectionClass="NSMutableArray" id="rJv-rF-zyj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCQ-SY-mqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
