@@ -8,11 +8,55 @@
 
 import UIKit
 
-class ItemTableCell : UITableViewCell {
+class ItemTableCell : PKSwipeTableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var aisleLabel: UILabel!
     @IBOutlet weak var separatorView: UIView!
+    
+    var deleteBtn : UIButton?
+    var hasBeenRetrieved : Bool = false
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.addRightViewInCell()
+    }
+    
+    func addRightViewInCell() {
+        //Create a view that will display when user swipe the cell in right
+        let viewCall = UIView()
+        viewCall.backgroundColor = UIColor.orange
+        viewCall.frame = CGRect(x: 0, y: 0, width: 68.0, height: 68.0)
+        
+        let bigBtn = UIButton(type: UIButtonType.custom)
+        bigBtn.frame = viewCall.frame
+        bigBtn.backgroundColor = UIColor.clear
+        self.deleteBtn = bigBtn
+        viewCall.addSubview(bigBtn)
+        
+        //Add a button to perform the action when user will tap on call and add a image to display
+        let btnCall = UIImageView(image: UIImage(named: "checkmark"))
+        btnCall.frame = bigBtn.frame
+        btnCall.backgroundColor = UIColor.orange
+        
+        bigBtn.addSubview(btnCall)
+        
+        //Call the super addRightOptions to set the view that will display while swiping
+        super.addRightOptionsView(viewCall)
+    }
+    
+    override func layoutSubviews() {
+        if hasBeenRetrieved {
+//            newMsgView.isHidden = true
+            //            titleLabel.textColor = UIColor.cityCoolInboxGray()
+        }
+        //        disclosureIcon.transform = CGAffineTransform(rotationAngle: (180.0 * CGFloat(M_PI)) / 180.0)
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+
 }
 
 class SuggestionsCollectionCell : UICollectionViewCell {
@@ -101,7 +145,7 @@ class SuggestionsTableCell : UITableViewCell, UICollectionViewDelegateFlowLayout
     
 }
 
-class ItemListViewController: AisleAideSetupViewController, UITableViewDataSource, UITableViewDelegate {
+class ItemListViewController: AisleAideSetupViewController, PKSwipeCellDelegateProtocol,UITableViewDataSource, UITableViewDelegate {
     var itemArray : [Item] = []
     var rowPressed = false
     var selectedRow : Int?
@@ -116,7 +160,9 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
     @IBOutlet weak var couponBtn: UIButton!
     @IBOutlet weak var exploreBtn: UIButton!
 
-    
+    fileprivate var oldStoredCell : ItemTableCell?
+    @IBOutlet weak var scoredItemsBtn: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.createCustomBackButton("+Add Item")
@@ -158,8 +204,33 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
         itemArray.sort(by: {$0.aisle!.aisleNumber! < $1.aisle!.aisleNumber!})
         self.itemsCountLabel.text = String(format:"Items: %d", self.itemArray.count)
 
+        if (Lyle.defaultHelper.currentItemList?.retrievedItemsArray.count)! == 0 {
+            self.scoredItemsBtn.isHidden = true
+        } else {
+            
+            self.scoredItemsBtn.isHidden = false
+            if Lyle.defaultHelper.currentItemList?.retrievedItemsArray.count == 1 {
+                self.scoredItemsBtn.setTitle("1 Item Scored", for: .normal)
+            } else {
+                self.scoredItemsBtn.setTitle("\((Lyle.defaultHelper.currentItemList?.retrievedItemsArray.count)!) Items Scored", for: .normal)
+            }
+
+        }
         tableView.reloadData()
 
+    }
+    
+    //MARK: SwipeCell Delegate Methods
+    func swipeBeginInCell(_ cell: PKSwipeTableViewCell) {
+        
+        oldStoredCell = cell as? ItemTableCell
+    }
+    
+    func swipeDoneOnPreviousCell() -> PKSwipeTableViewCell? {
+        guard let cell = oldStoredCell else {
+            return nil
+        }
+        return cell
     }
     
     @IBAction func topBtnPressed(_ sender: UIButton) {
@@ -176,12 +247,33 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
 
     }
     
+    //MARK: Delete Item from TableView
+    func itemRetrieved (_ sender: UIButton) {
+        let cell  = sender.superview!.superview!.superview!.superview as! ItemTableCell
+        
+        let idxPath = tableView.indexPath(for: cell)
+        //Remove item from itemArray and add to currentItemList.retrievedItem
+        let item = self.itemArray[idxPath!.row]
+        Lyle.defaultHelper.currentItemList?.addRetrievedItem(item)
+        self.itemArray.remove(at: idxPath!.row)
+        if Lyle.defaultHelper.currentItemList?.retrievedItemsArray.count == 1 {
+            self.scoredItemsBtn.setTitle("1 Item Scored", for: .normal)
+        } else {
+            self.scoredItemsBtn.setTitle("\((Lyle.defaultHelper.currentItemList?.retrievedItemsArray.count)!) Items Scored", for: .normal)
+        }
+        self.scoredItemsBtn.isHidden = false
+
+//        items.remove(at: idxPath!.row)
+        tableView.deleteRows(at: [idxPath!], with: .fade)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    //MARK: TABLEVIEW DATASOURCE METHODS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if rowPressed {
             return self.itemArray.count + 1
@@ -195,12 +287,14 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
         if suggestedCellIndexPath != nil {
             if indexPath != suggestedCellIndexPath {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableCell", for: indexPath) as! ItemTableCell
-                
+                cell.delegate = self
+
                 let item = self.itemArray[indexPath.row]
                 cell.nameLabel.text = item.name
                 cell.aisleLabel.text = "\(item.aisleNum!)"
                 print(cell.aisleLabel.text!)
-                
+                cell.deleteBtn?.addTarget(self, action: #selector(ItemListViewController.itemRetrieved), for: .touchUpInside)
+
                 return cell
 
 
@@ -213,12 +307,14 @@ class ItemListViewController: AisleAideSetupViewController, UITableViewDataSourc
             }
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableCell", for: indexPath) as! ItemTableCell
-            
+            cell.delegate = self
+
             let item = self.itemArray[indexPath.row]
             cell.nameLabel.text = item.name
             cell.aisleLabel.text = "\(item.aisleNum!)"
             print(cell.aisleLabel.text!)
-            
+            cell.deleteBtn?.addTarget(self, action: #selector(ItemListViewController.itemRetrieved), for: .touchUpInside)
+
             return cell
 
         }

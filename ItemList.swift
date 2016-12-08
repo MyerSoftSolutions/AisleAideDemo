@@ -10,6 +10,7 @@ import UIKit
 
 class ItemList: NSObject {
     var itemArray : [Item] = []
+    var retrievedItemsArray : [Item] = []
     
     func addNewItem(_ item: Item) {
         self.itemArray.append(item)
@@ -19,4 +20,11 @@ class ItemList: NSObject {
         return self.itemArray
     }
 
+    func addRetrievedItem(_ item: Item) {
+        self.retrievedItemsArray.append(item)
+    }
+
+    func getRetrievedItems() -> [Item] {
+        return self.retrievedItemsArray
+    }
 }

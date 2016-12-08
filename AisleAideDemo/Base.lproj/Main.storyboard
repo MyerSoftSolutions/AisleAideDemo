@@ -724,7 +724,7 @@
                                         <rect key="frame" x="39" y="21" width="295" height="40"/>
                                         <subviews>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shf-Ov-gTF">
-                                                <rect key="frame" x="0.0" y="5" width="90.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="5" width="90" height="30"/>
                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                                 <state key="normal" title="Sales">
                                                     <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -734,7 +734,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNY-h4-QrP">
-                                                <rect key="frame" x="102.5" y="5" width="90" height="30"/>
+                                                <rect key="frame" x="102" y="5" width="91" height="30"/>
                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                                 <state key="normal" title="Coupons">
                                                     <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -744,7 +744,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDW-Qd-g4b">
-                                                <rect key="frame" x="204.5" y="5" width="90.5" height="30"/>
+                                                <rect key="frame" x="205" y="5" width="90" height="30"/>
                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                                 <state key="normal" title="Explore">
                                                     <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -783,9 +783,9 @@
                                 <exclude reference="uvS-t4-qYb"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Hty-Ts-P6d"/>
                                 <exclude reference="OQj-z7-sJE"/>
                                 <exclude reference="eOg-ov-0gg"/>
-                                <exclude reference="Hty-Ts-P6d"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -793,9 +793,9 @@
                                 <include reference="uvS-t4-qYb"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Hty-Ts-P6d"/>
                                 <include reference="OQj-z7-sJE"/>
                                 <include reference="eOg-ov-0gg"/>
-                                <include reference="Hty-Ts-P6d"/>
                             </mask>
                         </variation>
                     </view>
@@ -833,7 +833,7 @@
                                         <rect key="frame" x="39" y="21" width="295" height="40"/>
                                         <subviews>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnh-k9-cpW">
-                                                <rect key="frame" x="0.0" y="5" width="90.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="5" width="90" height="30"/>
                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                                 <state key="normal" title="Sales">
                                                     <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -843,7 +843,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubd-ss-aXB">
-                                                <rect key="frame" x="102.5" y="5" width="90" height="30"/>
+                                                <rect key="frame" x="102" y="5" width="91" height="30"/>
                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                                 <state key="normal" title="Coupons">
                                                     <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -853,7 +853,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vR-jc-Aq4">
-                                                <rect key="frame" x="204.5" y="5" width="90.5" height="30"/>
+                                                <rect key="frame" x="205" y="5" width="90" height="30"/>
                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                                 <state key="normal" title="Explore">
                                                     <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -1137,15 +1137,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Items: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmS-aV-q9t">
-                                <rect key="frame" x="16" y="127" width="218" height="36"/>
+                                <rect key="frame" x="16" y="137" width="86" height="26"/>
                                 <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
-                                <color key="textColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.94509803921568625" green="1" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Aisle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dz-Oj-SWp">
                                 <rect key="frame" x="313" y="127" width="52" height="36"/>
                                 <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
-                                <color key="textColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.94509803921568625" green="1" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PQX-JG-kra">
@@ -1340,12 +1340,20 @@
                                     <constraint firstAttribute="height" constant="40" id="w68-QG-13V"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSR-y3-zm3">
+                                <rect key="frame" x="110" y="128" width="136" height="28"/>
+                                <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="17"/>
+                                <state key="normal" title="5 Items Scored">
+                                    <color key="titleColor" red="0.13765120712047735" green="0.85390724628345782" blue="0.98046875" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.082352941176470587" green="0.45882352941176469" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="8dz-Oj-SWp" firstAttribute="top" secondItem="B3c-ht-hlN" secondAttribute="bottom" constant="63" id="4w9-V0-g3v"/>
                             <constraint firstItem="JmS-aV-q9t" firstAttribute="centerY" secondItem="8dz-Oj-SWp" secondAttribute="centerY" id="BvE-8c-jUO"/>
                             <constraint firstItem="dPo-qu-iis" firstAttribute="top" secondItem="PQX-JG-kra" secondAttribute="bottom" constant="13" id="DJ2-mQ-ui9"/>
+                            <constraint firstItem="PQX-JG-kra" firstAttribute="top" secondItem="aSR-y3-zm3" secondAttribute="bottom" constant="8" id="FA5-Wx-8dy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VAO-gb-IvC" secondAttribute="trailing" constant="40" id="GKe-a0-g58"/>
                             <constraint firstItem="VAO-gb-IvC" firstAttribute="top" secondItem="B3c-ht-hlN" secondAttribute="bottom" constant="21" id="Gwx-i8-7m4"/>
                             <constraint firstAttribute="trailing" secondItem="8dz-Oj-SWp" secondAttribute="trailing" constant="10" id="QFl-e5-yOn"/>
@@ -1354,6 +1362,7 @@
                             <constraint firstItem="PQX-JG-kra" firstAttribute="top" secondItem="8dz-Oj-SWp" secondAttribute="bottom" constant="1" id="dI7-Wb-wos"/>
                             <constraint firstItem="VAO-gb-IvC" firstAttribute="leading" secondItem="OnN-We-7RP" secondAttribute="leadingMargin" constant="40" id="ddD-GG-3WK"/>
                             <constraint firstAttribute="trailing" secondItem="PQX-JG-kra" secondAttribute="trailing" id="l0C-Kc-WmP"/>
+                            <constraint firstItem="aSR-y3-zm3" firstAttribute="centerX" secondItem="OnN-We-7RP" secondAttribute="centerX" id="sRM-9P-fcs"/>
                             <constraint firstItem="PQX-JG-kra" firstAttribute="leading" secondItem="OnN-We-7RP" secondAttribute="leading" id="v0p-mm-bHF"/>
                         </constraints>
                     </view>
@@ -1362,6 +1371,7 @@
                         <outlet property="exploreBtn" destination="hTN-Sd-kGS" id="MKj-P3-6tk"/>
                         <outlet property="itemsCountLabel" destination="JmS-aV-q9t" id="uaC-AR-ueZ"/>
                         <outlet property="salesBtn" destination="O3S-g9-Vgf" id="atS-CF-UGE"/>
+                        <outlet property="scoredItemsBtn" destination="aSR-y3-zm3" id="0ls-6M-zKA"/>
                         <outlet property="tableView" destination="PQX-JG-kra" id="e7C-49-3Kx"/>
                     </connections>
                 </viewController>

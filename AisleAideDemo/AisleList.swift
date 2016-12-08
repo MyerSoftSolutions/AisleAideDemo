@@ -28,6 +28,12 @@ class Lyle {
     func removeLastItem() {
         self.currentItemList?.itemArray.remove(at: (self.currentItemList?.itemArray.count)! - 1)
     }
+    
+    func addRetrievedItem(_ retrievedItem: Item) -> Void {
+        self.currentItemList?.addRetrievedItem(retrievedItem)
+     
+    }
+
 }
 
 class AisleList: NSObject {
