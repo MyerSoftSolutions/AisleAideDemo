@@ -256,13 +256,16 @@ class ItemListViewController: AisleAideSetupViewController, PKSwipeCellDelegateP
         let item = self.itemArray[idxPath!.row]
         Lyle.defaultHelper.currentItemList?.addRetrievedItem(item)
         self.itemArray.remove(at: idxPath!.row)
+        Lyle.defaultHelper.currentItemList?.itemArray = self.itemArray
+        self.itemsCountLabel.text = "Items: \(self.itemArray.count)"
+        
         if Lyle.defaultHelper.currentItemList?.retrievedItemsArray.count == 1 {
             self.scoredItemsBtn.setTitle("1 Item Scored", for: .normal)
         } else {
             self.scoredItemsBtn.setTitle("\((Lyle.defaultHelper.currentItemList?.retrievedItemsArray.count)!) Items Scored", for: .normal)
         }
         self.scoredItemsBtn.isHidden = false
-
+        
 //        items.remove(at: idxPath!.row)
         tableView.deleteRows(at: [idxPath!], with: .fade)
         
