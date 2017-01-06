@@ -23,6 +23,12 @@
 		D94178DD1D6E743F00FF79CC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94178DB1D6E743F00FF79CC /* Store.swift */; };
 		D96091D91DC934FA0071DE84 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96091D81DC934FA0071DE84 /* ItemListViewController.swift */; };
 		D96091DA1DC934FA0071DE84 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96091D81DC934FA0071DE84 /* ItemListViewController.swift */; };
+		D96BE3FE1E04A5AB00655912 /* RetrievedItemsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BE3FC1E04A5AB00655912 /* RetrievedItemsTableController.swift */; };
+		D96BE3FF1E04A5AB00655912 /* RetrievedItemsTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96BE3FD1E04A5AB00655912 /* RetrievedItemsTableController.xib */; };
+		D96BE4021E04AA5800655912 /* RetrievedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BE4001E04AA5700655912 /* RetrievedItemTableViewCell.swift */; };
+		D96BE4031E04AA5800655912 /* RetrievedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BE4001E04AA5700655912 /* RetrievedItemTableViewCell.swift */; };
+		D96BE4041E04AA5800655912 /* RetrievedItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96BE4011E04AA5700655912 /* RetrievedItemTableViewCell.xib */; };
+		D96BE4051E04AA5800655912 /* RetrievedItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96BE4011E04AA5700655912 /* RetrievedItemTableViewCell.xib */; };
 		D97BC8271DA8236B00C7AD82 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97BC8261DA8236B00C7AD82 /* ItemCollectionViewController.swift */; };
 		D97BC8281DA8236B00C7AD82 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97BC8261DA8236B00C7AD82 /* ItemCollectionViewController.swift */; };
 		D988856D1D90ED650065510D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D988856C1D90ED650065510D /* CoreLocation.framework */; };
@@ -74,6 +80,10 @@
 		D94178D81D6E73F900FF79CC /* Patron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patron.swift; sourceTree = "<group>"; };
 		D94178DB1D6E743F00FF79CC /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		D96091D81DC934FA0071DE84 /* ItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		D96BE3FC1E04A5AB00655912 /* RetrievedItemsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrievedItemsTableController.swift; sourceTree = "<group>"; };
+		D96BE3FD1E04A5AB00655912 /* RetrievedItemsTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RetrievedItemsTableController.xib; sourceTree = "<group>"; };
+		D96BE4001E04AA5700655912 /* RetrievedItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrievedItemTableViewCell.swift; sourceTree = "<group>"; };
+		D96BE4011E04AA5700655912 /* RetrievedItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RetrievedItemTableViewCell.xib; sourceTree = "<group>"; };
 		D97BC8261DA8236B00C7AD82 /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
 		D988856C1D90ED650065510D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D988856E1D90ED700065510D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -163,6 +173,10 @@
 				D97BC8261DA8236B00C7AD82 /* ItemCollectionViewController.swift */,
 				D926E43F1DCBA5C7009D35A2 /* AddMoreItemsViewController.swift */,
 				D96091D81DC934FA0071DE84 /* ItemListViewController.swift */,
+				D96BE3FC1E04A5AB00655912 /* RetrievedItemsTableController.swift */,
+				D96BE3FD1E04A5AB00655912 /* RetrievedItemsTableController.xib */,
+				D96BE4001E04AA5700655912 /* RetrievedItemTableViewCell.swift */,
+				D96BE4011E04AA5700655912 /* RetrievedItemTableViewCell.xib */,
 				D9B466101DF90F09009A9C93 /* PKSwipeTableViewCell.swift */,
 				D94178CE1D6E6DCD00FF79CC /* AisleAide System Objects */,
 				D9AB11A91D6E18D5004A1875 /* Assets.xcassets */,
@@ -277,6 +291,8 @@
 				D99DF2181D8902AF000EF6EF /* AisleAide_v1.pdf in Resources */,
 				D99CDB9D1DA2EE1900346A15 /* Groker.plist in Resources */,
 				D9AB11AA1D6E18D5004A1875 /* Assets.xcassets in Resources */,
+				D96BE3FF1E04A5AB00655912 /* RetrievedItemsTableController.xib in Resources */,
+				D96BE4041E04AA5800655912 /* RetrievedItemTableViewCell.xib in Resources */,
 				D9AB11A51D6E18D5004A1875 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +305,7 @@
 				D99DF2101D889A7B000EF6EF /* StoreModel.plist in Resources */,
 				D99DF21C1D8903C1000EF6EF /* freshProduce.jpg in Resources */,
 				D99DF2191D8902AF000EF6EF /* AisleAide_v1.pdf in Resources */,
+				D96BE4051E04AA5800655912 /* RetrievedItemTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,12 +326,14 @@
 				D9EA10271DA598E000296367 /* AisleAideSetupViewController.swift in Sources */,
 				D94178D91D6E73F900FF79CC /* Patron.swift in Sources */,
 				D9AB11A81D6E18D5004A1875 /* AisleAideDemo.xcdatamodeld in Sources */,
+				D96BE4021E04AA5800655912 /* RetrievedItemTableViewCell.swift in Sources */,
 				D97BC8271DA8236B00C7AD82 /* ItemCollectionViewController.swift in Sources */,
 				D9B466111DF90F09009A9C93 /* PKSwipeTableViewCell.swift in Sources */,
 				D99DF2031D874E99000EF6EF /* ItemList.swift in Sources */,
 				D96091D91DC934FA0071DE84 /* ItemListViewController.swift in Sources */,
 				D94178D61D6E73D100FF79CC /* AisleList.swift in Sources */,
 				D94178D31D6E6E3A00FF79CC /* Aisle.swift in Sources */,
+				D96BE3FE1E04A5AB00655912 /* RetrievedItemsTableController.swift in Sources */,
 				D94178D01D6E6E1800FF79CC /* ProductGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +353,7 @@
 				D9EA10251DA58C9C00296367 /* ProdGrpCollectionViewController.swift in Sources */,
 				D99DF2041D874E99000EF6EF /* ItemList.swift in Sources */,
 				D9AB11B81D6E18D5004A1875 /* AisleAideDemoTests.swift in Sources */,
+				D96BE4031E04AA5800655912 /* RetrievedItemTableViewCell.swift in Sources */,
 				D9B466121DF90F09009A9C93 /* PKSwipeTableViewCell.swift in Sources */,
 				D94178D71D6E73D100FF79CC /* AisleList.swift in Sources */,
 				D97BC8281DA8236B00C7AD82 /* ItemCollectionViewController.swift in Sources */,

@@ -1343,9 +1343,12 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSR-y3-zm3">
                                 <rect key="frame" x="110" y="128" width="136" height="28"/>
                                 <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="17"/>
-                                <state key="normal" title="5 Items Scored">
+                                <state key="normal" title="1 Item Scored">
                                     <color key="titleColor" red="0.13765120712047735" green="0.85390724628345782" blue="0.98046875" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="showRetrievedItems:" destination="SSm-b5-pMf" eventType="touchUpInside" id="HkQ-VB-1XO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.082352941176470587" green="0.45882352941176469" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>

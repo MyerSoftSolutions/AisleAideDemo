@@ -145,7 +145,7 @@ class SuggestionsTableCell : UITableViewCell, UICollectionViewDelegateFlowLayout
     
 }
 
-class ItemListViewController: AisleAideSetupViewController, PKSwipeCellDelegateProtocol,UITableViewDataSource, UITableViewDelegate {
+class ItemListViewController: AisleAideSetupViewController, PKSwipeCellDelegateProtocol,UITableViewDataSource, UITableViewDelegate, RetrievedItemsModalDelegate {
     var itemArray : [Item] = []
     var rowPressed = false
     var selectedRow : Int?
@@ -247,7 +247,61 @@ class ItemListViewController: AisleAideSetupViewController, PKSwipeCellDelegateP
 
     }
     
-    //MARK: Delete Item from TableView
+    func updateItemList(_ item: Item){
+        self.itemArray = (Lyle.defaultHelper.currentItemList?.itemArray)!
+        self.itemArray.sort(by: {$0.aisle!.aisleNumber! < $1.aisle!.aisleNumber!})
+        self.itemsCountLabel.text = String(format:"Items: %d", self.itemArray.count)
+        
+        if (Lyle.defaultHelper.currentItemList?.retrievedItemsArray.count)! == 0 {
+            self.scoredItemsBtn.isHidden = true
+        } else {
+            
+            self.scoredItemsBtn.isHidden = false
+            if Lyle.defaultHelper.currentItemList?.retrievedItemsArray.count == 1 {
+                self.scoredItemsBtn.setTitle("1 Item Scored", for: .normal)
+            } else {
+                self.scoredItemsBtn.setTitle("\((Lyle.defaultHelper.currentItemList?.retrievedItemsArray.count)!) Items Scored", for: .normal)
+            }
+            
+        }
+
+        
+        self.tableView.reloadData()
+        
+        //Receive the Item, and add it into 
+        
+        if let invalidView = UIApplication.shared.keyWindow!.viewWithTag(1000) {
+            invalidView.removeFromSuperview()
+        }
+        
+    }
+    
+    func nixModal() {
+        if let invalidView = UIApplication.shared.keyWindow!.viewWithTag(1000) {
+            invalidView.removeFromSuperview()
+        }
+    }
+    
+    func presentRetrievedItems() {
+        if let invalidView = UIApplication.shared.keyWindow!.viewWithTag(1000) {
+            invalidView.removeFromSuperview()
+        }
+        
+        let invalidSignInModal = RetrievedItemsModalController()
+        invalidSignInModal.modalDelegate = self
+        invalidSignInModal.view.tag = 1000
+        
+        UIApplication.shared.keyWindow!.addSubview(invalidSignInModal.view)
+        self.addChildViewController(invalidSignInModal)
+        invalidSignInModal.didMove(toParentViewController: self)
+        
+    }
+
+    
+    @IBAction func showRetrievedItems(_ sender: UIButton) {
+        self.presentRetrievedItems()
+    }
+    //MARK: Retrieve Item from TableView
     func itemRetrieved (_ sender: UIButton) {
         let cell  = sender.superview!.superview!.superview!.superview as! ItemTableCell
         
