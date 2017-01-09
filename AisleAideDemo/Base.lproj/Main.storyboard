@@ -337,21 +337,21 @@
                                                     </variation>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mn1-6W-Rl0">
-                                                    <rect key="frame" x="65" y="43" width="266" height="61"/>
+                                                    <rect key="frame" x="65" y="43" width="266" height="62"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEX-Ud-CDm">
-                                                            <rect key="frame" x="0.0" y="0.0" width="266" height="15"/>
-                                                            <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="14"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="266" height="24.5"/>
+                                                            <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="11"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRU-ht-QMu">
-                                                            <rect key="frame" x="0.0" y="15" width="266" height="23"/>
-                                                            <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="14"/>
+                                                            <rect key="frame" x="0.0" y="24.5" width="266" height="18.5"/>
+                                                            <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="11"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQY-AP-HWl">
-                                                            <rect key="frame" x="0.0" y="38" width="266" height="23"/>
-                                                            <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="14"/>
+                                                            <rect key="frame" x="0.0" y="43" width="266" height="18.5"/>
+                                                            <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="11"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -1306,7 +1306,7 @@
                                 <rect key="frame" x="88" y="85" width="263" height="40"/>
                                 <subviews>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3S-g9-Vgf">
-                                        <rect key="frame" x="0.0" y="5" width="79.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="5" width="80" height="30"/>
                                         <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                         <state key="normal" title="Sales">
                                             <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -1316,7 +1316,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O45-fo-7FY">
-                                        <rect key="frame" x="91.5" y="5" width="80" height="30"/>
+                                        <rect key="frame" x="92" y="5" width="79" height="30"/>
                                         <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                         <state key="normal" title="Coupons">
                                             <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -1326,7 +1326,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTN-Sd-kGS">
-                                        <rect key="frame" x="183.5" y="5" width="79.5" height="30"/>
+                                        <rect key="frame" x="183" y="5" width="80" height="30"/>
                                         <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                         <state key="normal" title="Explore">
                                             <color key="titleColor" red="0.94536839640000003" green="1" blue="0.56786387979999997" alpha="1" colorSpace="calibratedRGB"/>

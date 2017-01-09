@@ -252,6 +252,7 @@
 				TargetAttributes = {
 					D9AB119B1D6E18D5004A1875 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = X557HAPU2P;
 						LastSwiftMigration = 0800;
 					};
 					D9AB11B21D6E18D5004A1875 = {
@@ -479,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X557HAPU2P;
 				INFOPLIST_FILE = AisleAideDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyerSoftSol.AisleAideDemo;
@@ -491,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X557HAPU2P;
 				INFOPLIST_FILE = AisleAideDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyerSoftSol.AisleAideDemo;
