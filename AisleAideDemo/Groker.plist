@@ -20,6 +20,29 @@
 							<key>name</key>
 							<string>Fresh Vegetables</string>
 						</dict>
+						<dict>
+							<key>name</key>
+							<string>Salad Greens</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Deli</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Premium Meats</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Specialty Bread</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Seafood</string>
+						</dict>
 					</array>
 				</dict>
 			</array>
@@ -27,6 +50,17 @@
 		<dict>
 			<key>ProductGroups</key>
 			<array>
+				<dict>
+					<key>name</key>
+					<string>Spaghetti Sauce</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Spaghetti Sauce</string>
+						</dict>
+					</array>
+				</dict>
 				<dict>
 					<key>name</key>
 					<string>Stuffing &amp; Gravy</string>
@@ -110,7 +144,7 @@
 						</dict>
 						<dict>
 							<key>name</key>
-							<string>Tuna</string>
+							<string>Canned Tuna</string>
 						</dict>
 						<dict>
 							<key>name</key>
@@ -138,7 +172,7 @@
 						</dict>
 						<dict>
 							<key>name</key>
-							<string>Canned Tomatoes</string>
+							<string>Diced Tomatoes</string>
 						</dict>
 						<dict>
 							<key>name</key>
@@ -167,6 +201,10 @@
 							<key>name</key>
 							<string>Rolls</string>
 						</dict>
+						<dict>
+							<key>name</key>
+							<string>Sweets</string>
+						</dict>
 					</array>
 				</dict>
 				<dict>
@@ -178,10 +216,6 @@
 							<key>name</key>
 							<string>Crackers</string>
 						</dict>
-						<dict>
-							<key>name</key>
-							<string>Sweets</string>
-						</dict>
 					</array>
 				</dict>
 				<dict>
@@ -191,7 +225,7 @@
 					<array>
 						<dict>
 							<key>name</key>
-							<string>Specialty Bread</string>
+							<string>Sliced Bread</string>
 						</dict>
 						<dict>
 							<key>name</key>
@@ -217,13 +251,138 @@
 			<array>
 				<dict>
 					<key>name</key>
-					<string>Pancake Mix &amp; Syrup</string>
+					<string>Chips &amp; Pretzels</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Chips</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Pretzels</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Tortilla Chips</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Multipack Chips</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Candy</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Candy</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Chocolate</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Nuts</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Snack Nuts</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Peanuts</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cashews</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Almonds</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Popcorn</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Popcorn</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Cookies</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Cookies</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Snacks</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Beef Jerky</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Sunflower seeds</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Pancake Mix</string>
 					<key>Items</key>
 					<array>
 						<dict>
 							<key>name</key>
 							<string>Pancake Mix</string>
 						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Breakfast Items</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Oatmeal</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cream of Wheat</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Syrup</string>
+					<key>Items</key>
+					<array>
 						<dict>
 							<key>name</key>
 							<string>Syrup</string>
@@ -238,10 +397,6 @@
 						<dict>
 							<key>name</key>
 							<string>Cereal</string>
-						</dict>
-						<dict>
-							<key>name</key>
-							<string>Hot Cereal</string>
 						</dict>
 					</array>
 				</dict>
@@ -265,16 +420,35 @@
 							<key>name</key>
 							<string>Peanut Butter</string>
 						</dict>
+						<dict>
+							<key>name</key>
+							<string>Jam</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Jelly</string>
+						</dict>
 					</array>
 				</dict>
 				<dict>
 					<key>name</key>
-					<string>Snacks</string>
+					<string>Granola Bars</string>
 					<key>Items</key>
 					<array>
 						<dict>
 							<key>name</key>
 							<string>Granola Bars</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Multipack snacks</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Fruit Snacks</string>
 						</dict>
 						<dict>
 							<key>name</key>
@@ -282,11 +456,19 @@
 						</dict>
 						<dict>
 							<key>name</key>
-							<string>Multipack Snacks</string>
+							<string>Pudding Cups</string>
 						</dict>
 						<dict>
 							<key>name</key>
-							<string>Pudding Cups</string>
+							<string>Jell-O</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Raisins</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cranberries</string>
 						</dict>
 					</array>
 				</dict>
@@ -295,6 +477,33 @@
 		<dict>
 			<key>ProductGroups</key>
 			<array>
+				<dict>
+					<key>name</key>
+					<string>Baking Mixes</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Cake Decorations</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Gellatin</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Brownie Mix</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cake Mix</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Baking Soda</string>
+						</dict>
+					</array>
+				</dict>
 				<dict>
 					<key>name</key>
 					<string>Coffee &amp; Tea</string>
@@ -308,6 +517,14 @@
 							<key>name</key>
 							<string>Tea</string>
 						</dict>
+						<dict>
+							<key>name</key>
+							<string>Coffee Filters</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Coffee Creamer</string>
+						</dict>
 					</array>
 				</dict>
 				<dict>
@@ -317,7 +534,11 @@
 					<array>
 						<dict>
 							<key>name</key>
-							<string>Pans</string>
+							<string>Disposable Pans</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Mason Jars</string>
 						</dict>
 					</array>
 				</dict>
@@ -333,6 +554,10 @@
 						<dict>
 							<key>name</key>
 							<string>Sugar</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cornmeal</string>
 						</dict>
 					</array>
 				</dict>
@@ -353,6 +578,10 @@
 							<key>name</key>
 							<string>Shortening</string>
 						</dict>
+						<dict>
+							<key>name</key>
+							<string>Olive Oil</string>
+						</dict>
 					</array>
 				</dict>
 				<dict>
@@ -366,11 +595,31 @@
 						</dict>
 						<dict>
 							<key>name</key>
-							<string>Seasonings</string>
+							<string>Chocolate Syrup</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Vanilla</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Flavorings</string>
 						</dict>
 						<dict>
 							<key>name</key>
 							<string>Baking Ingredients</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Almonds</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Walnuts</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Herbs</string>
 						</dict>
 					</array>
 				</dict>
@@ -392,6 +641,25 @@
 							<key>name</key>
 							<string>Pots &amp; Pans</string>
 						</dict>
+						<dict>
+							<key>name</key>
+							<string>Kitchen Towels</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cooking Utensils</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Small Appliances</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Small Appliances</string>
+						</dict>
 					</array>
 				</dict>
 				<dict>
@@ -406,6 +674,22 @@
 						<dict>
 							<key>name</key>
 							<string>Ketchup</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>BBQ Sauce</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Honey Mustard</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Mayo</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Hot Sauce</string>
 						</dict>
 					</array>
 				</dict>
@@ -424,7 +708,11 @@
 						</dict>
 						<dict>
 							<key>name</key>
-							<string>Wine Coolers</string>
+							<string>Relish</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Pickled Jalepeno</string>
 						</dict>
 					</array>
 				</dict>
@@ -450,7 +738,35 @@
 					<array>
 						<dict>
 							<key>name</key>
-							<string>Latin Foods</string>
+							<string>Taco Shells</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Tortillas</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Taco Shells</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Tortilla Chips</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Taco Sauce</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Salsa</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Asian Foods</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Kosher Foods</string>
 						</dict>
 					</array>
 				</dict>
@@ -466,7 +782,23 @@
 					<array>
 						<dict>
 							<key>name</key>
-							<string>Storage</string>
+							<string>Baskets</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Tupperware</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>HOT Buys!</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Seasonal Candy</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Seasonal Items</string>
 						</dict>
 					</array>
 				</dict>
@@ -496,12 +828,124 @@
 			<array>
 				<dict>
 					<key>name</key>
+					<string>Seasonal</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Baskets</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Tupperware</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>HOT Buys!</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Seasonal Candy</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Seasonal Items</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Paper Towels</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Paper Towels</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Bath Tissue</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Facial Tissue</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Books</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Books</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Magazines</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Magazine</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Mom Needs</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Leggings</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Stockings</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Aroma Items</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Socks</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Kneehighs</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Tights</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Candles</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>Diapers</string>
 					<key>Items</key>
 					<array>
 						<dict>
 							<key>name</key>
 							<string>Diapers</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Wipes</string>
 						</dict>
 					</array>
 				</dict>
@@ -523,7 +967,11 @@
 					<array>
 						<dict>
 							<key>name</key>
-							<string>Q-Tips</string>
+							<string>Cotton Swabs</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Baby Formula</string>
 						</dict>
 						<dict>
 							<key>name</key>
@@ -532,6 +980,10 @@
 						<dict>
 							<key>name</key>
 							<string>Baby Oil</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Vaseline</string>
 						</dict>
 					</array>
 				</dict>
@@ -544,6 +996,14 @@
 							<key>name</key>
 							<string>Gift Wrap</string>
 						</dict>
+						<dict>
+							<key>name</key>
+							<string>Gift Bags</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Gift Decorations</string>
+						</dict>
 					</array>
 				</dict>
 				<dict>
@@ -554,6 +1014,10 @@
 						<dict>
 							<key>name</key>
 							<string>Greeting Card</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Holiday Card</string>
 						</dict>
 					</array>
 				</dict>
@@ -592,28 +1056,545 @@
 			<array>
 				<dict>
 					<key>name</key>
-					<string>Wine</string>
+					<string>Bath</string>
 					<key>Items</key>
 					<array>
 						<dict>
 							<key>name</key>
-							<string>Reisling</string>
+							<string>Hygienne Items</string>
 						</dict>
 						<dict>
 							<key>name</key>
-							<string>Chardonnay</string>
+							<string>Women Hygienne</string>
 						</dict>
 						<dict>
 							<key>name</key>
-							<string>Box Wine</string>
+							<string>Bathing Needs</string>
 						</dict>
 						<dict>
 							<key>name</key>
-							<string>Cabernet Sauvignon</string>
+							<string>Hair Brush</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Hair Comb</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Shampoo</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Dandruff Control</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Soaps</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Soap</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Body Wash</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Shaving</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Aftershave</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Razors</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Lotions</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Lotion</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Cosmetics</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Cosmetics</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cotton Swabs</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cotton Balls</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Hair Coloring</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Feminine Items</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Pads</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Tampons</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Deoderant</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Deoderant</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Pest Control</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Bug Spray</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Charcoal</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Charcoal</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Lighter Fluid</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Lighter</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Grill Utensils</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>School &amp; Office</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Posterboard</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Pens</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Pencils</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Folders</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Paper</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Crayons</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Markers</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Scissors</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Tape</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Glue</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>White out</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Envelopes</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Dog &amp; Cat Food</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Dog Food</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Canned Pet Food</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cat Food</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Bird Feed</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Pet Treats</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Kitty Litter</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Auto Care</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Glass Cleaner</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>ArmorAll</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Light Bulbs</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Light Bulbs</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Laundry Supplies</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Fabric Softener</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Detergent</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Clorox</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Bleach</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Brooms &amp; Mops</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Broom</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Mop</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Floor Cleaner</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Household Cleaners</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Cleaning Solutions</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Glass Cleaner</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Air Vent Filters</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Air Freshener</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Dish Cleaning</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Dishwashing Liquid</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Dishwashing Packs</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Kitchen Soap</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Plastic Bags</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Trash Bags</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Tupperware</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Storage Bags</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Picnic Supplies</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Paper Plates</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cups</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Utensils</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Napkins</string>
 						</dict>
 						<dict>
 							<key>name</key>
 							<string>Wine</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Sport Drinks</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Sports Drinks</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Water</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Seltzer Water</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Tonic Water</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Fitness Foods</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Protein Bars</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Cocktail Mixes</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Margarita Mix</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cocktail Mix</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Foils &amp; Wraps</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Aluminum Foil</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Plastic Wrap</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Soft Drinks</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Soft Drinks</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Caffeinated Drinks</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Bottled Juice</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Bottled Juice</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Bottled Tea</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Bottled Tea</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Energy Drinks</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Energy Drinks</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Powdered Drinks</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Powdered Drinks</string>
 						</dict>
 					</array>
 				</dict>
@@ -629,11 +1610,77 @@
 					<array>
 						<dict>
 							<key>name</key>
-							<string>Beer</string>
+							<string>Domestic Beer</string>
 						</dict>
 						<dict>
 							<key>name</key>
-							<string>Cocktails</string>
+							<string>Imported Beer</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Wine</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Cabernet Souvignon </string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Reisling</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Moscato</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Merlot</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ProductGroups</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Beer</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Craft Beer</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Imported Beer</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Wine</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Cabernet Souvignon </string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Reisling</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Moscato</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Merlot</string>
 						</dict>
 					</array>
 				</dict>
@@ -713,7 +1760,7 @@
 					<array>
 						<dict>
 							<key>name</key>
-							<string>Frozen Meats</string>
+							<string>Frozen Chicken</string>
 						</dict>
 					</array>
 				</dict>
@@ -776,12 +1823,27 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>Ice</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Ice</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>Frozen Desserts</string>
 					<key>Items</key>
 					<array>
 						<dict>
 							<key>name</key>
 							<string>Frozen Desserts</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Popsicles</string>
 						</dict>
 					</array>
 				</dict>
