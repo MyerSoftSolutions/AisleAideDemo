@@ -52,6 +52,25 @@
 			<array>
 				<dict>
 					<key>name</key>
+					<string>Meats</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Beef</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Chicken</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Pork</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>Spaghetti Sauce</string>
 					<key>Items</key>
 					<array>
@@ -182,6 +201,17 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>Meat Cuts</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Meat Cuts</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>Buns &amp; Rolls</string>
 					<key>Items</key>
 					<array>
@@ -269,6 +299,17 @@
 						<dict>
 							<key>name</key>
 							<string>Multipack Chips</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Seafood Dept.</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Fresh Seafood</string>
 						</dict>
 					</array>
 				</dict>
@@ -506,6 +547,17 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>Hot Dogs</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Hot Dogs</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>Coffee &amp; Tea</string>
 					<key>Items</key>
 					<array>
@@ -648,6 +700,17 @@
 						<dict>
 							<key>name</key>
 							<string>Cooking Utensils</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Sausage</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Sausage</string>
 						</dict>
 					</array>
 				</dict>
@@ -828,6 +891,28 @@
 			<array>
 				<dict>
 					<key>name</key>
+					<string>Bacon</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Bacon</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Lunch Meats</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Lunch Meat</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>Seasonal</string>
 					<key>Items</key>
 					<array>
@@ -885,6 +970,25 @@
 						<dict>
 							<key>name</key>
 							<string>Books</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Cheese</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Cheese Singles</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Shredded Cheese</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Specialty Cheese</string>
 						</dict>
 					</array>
 				</dict>
@@ -1186,6 +1290,17 @@
 			<array>
 				<dict>
 					<key>name</key>
+					<string>Eggs</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Eggs</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>Pest Control</string>
 					<key>Items</key>
 					<array>
@@ -1321,6 +1436,17 @@
 						<dict>
 							<key>name</key>
 							<string>ArmorAll</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Yogurt</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Yogurt</string>
 						</dict>
 					</array>
 				</dict>
@@ -1556,6 +1682,21 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>Butter</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Butter</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Margarine</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>Bottled Juice</string>
 					<key>Items</key>
 					<array>
@@ -1605,6 +1746,28 @@
 			<array>
 				<dict>
 					<key>name</key>
+					<string>Pie Crust</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Pie Crust</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Refriger. Biscuits</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Refriger. Biscuits</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>Beer</string>
 					<key>Items</key>
 					<array>
@@ -1648,6 +1811,28 @@
 			<array>
 				<dict>
 					<key>name</key>
+					<string>Cream Cheese</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Cream Cheese</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Orange Juice</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Orange Juice</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>Beer</string>
 					<key>Items</key>
 					<array>
@@ -1689,6 +1874,39 @@
 		<dict>
 			<key>ProductGroups</key>
 			<array>
+				<dict>
+					<key>name</key>
+					<string>Refrigerated Juices</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Refrigerated Juices</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Cottage Cheese</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Cottage Cheese</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Refrigerated Tea</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Refrigerated Tea</string>
+						</dict>
+					</array>
+				</dict>
 				<dict>
 					<key>name</key>
 					<string>Frozen Meals</string>
@@ -1791,6 +2009,37 @@
 		<dict>
 			<key>ProductGroups</key>
 			<array>
+				<dict>
+					<key>name</key>
+					<string>Milk</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>name</key>
+							<string>Almond Milk</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Soy Milk</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Chocolate Milk</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Milk</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Half &amp; Half</string>
+						</dict>
+						<dict>
+							<key>name</key>
+							<string>Cream</string>
+						</dict>
+					</array>
+				</dict>
 				<dict>
 					<key>name</key>
 					<string>Ice Cream</string>
